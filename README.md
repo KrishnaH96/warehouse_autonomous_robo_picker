@@ -4,49 +4,59 @@
 
 ![CICD Workflow status](https://github.com/TommyChangUMD/ENPM808X-final-project-boilerplate/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
 
-This repo provides a template for setting up:
+# TurtleBot based fork-lift
 
-  - GitHub CI
-    - "main" branch runs in a ROS 2 Humble container
-  - Codecov badges
-  - Colcon workspace structure
-  - C++ library that depends on other system libraries such as OpenCV and rclcpp.
-    - The library is *self-contained*
-    - In real life, we download source code of third-party modules all
-      the time and often just stick the modules as-is into our colcon
-      workspace.
-  - ROS 2 package that depends on a C++ library built in the same colcon workspace
-  - Establishing package dependency within the colcon workspace.
-    - ie. the ROS 2 package will not be built before all of its dependent C++ libraries are built first
-  - Multiple subscriptions within a ROS2 node all listening to the same topic.
-    - Only one callback function is needed.
-    - More efficient than to have N callback functions.
-    - More efficient than to have N ROS nodes.
-  - Unit test and integration test.
-  - Doxygen setup
-  - ROS2 launch file
-  - Bash scripts that can be invoked by the "ros2 run ..." command
+# Team Members:
+
+- Krishna Hundekari
+
+- Tej Kiran
   
-## How to generate package dependency graph
+- Abrarudin Syed
 
-``` bash
-colcon graph --dot | dot -Tpng -o depGraph.png
-open depGraph.png
-```
-[<img src=screenshots/depGraph.png
-    width="20%" 
-    style="display: block; margin: 0 auto"
-    />](screenshots/depGraph.png)
+# Project Overview:
+
+## Introduction
+The "RoboPicker" prototype is designed to operate in controlled warehouse environments; it is an advanced system that has been carefully engineered for optimal operation. Its primary functions include picking up boxed items that have been arranged at random, navigating inside the warehouse autonomously, and carefully placing these items into designated empty spaces. With its ability to handle and place items with precision and adaptability, the "RoboPicker" redefines efficiency in warehouse logistics. It operates under the premise of a structured warehouse layout with clearly defined paths and drop-off zones.
+
+## Purpose
+We propose developing an autonomous warehouse collection robot using the simulated TurtleBot as its foundation. The robot will navigate a warehouse, targeting specific locations to retrieve marked boxes and transport them to predetermined positions. Fiducial markers on the boxes will contain crucial information about their designated destinations. Our goal is complete autonomy in stacking these boxes in their assigned positions within the warehouse. This solution aims to advance warehouse automation, improving efficiency in inventory management and streamlining order fulfillment. To emulate a real warehouse scenario, we will use forklifts for actuation purposes.
+
+
+## Modules
+The repository consists of following ROS2 packages:
+ 
+  - *Simulation*: We will use Gazebo and a custom warehouse model to simulate the environment
+  - *Modeling*: We will take the existing Turtle bot design and attach a fork list with prismatic join to the side of the robot using a dummy joint. We will also attach an RGB camera to the model for detecting the packages to be transferred.
+  - *SLAM*: We will use the ROS2 slam tool box for generating the 2D map and localization of the robot.
+  - *Navigation*: ROS2 Nav2 component will be integrated to the framework to perform autonomous navigation from start location to the end location.
+  - *Pick & Place*: A custom package will be developed to orient robot and perform pick & place using the fork-lift
+
+
+## Technologies and Libraries
+The module will be developed using the following technologies:
+- Programming Language: C++11/14
+- Libraries: ROS2 Gazebo ( Apache v2.0 ), ROS2 Nav2 ( SPDX-ID - Various Licenses ), 
+- ROS2 slam toolbox ( GPL v2.1 ).
+- Build System: CMakes
+- Testing Framework: Google Test
+- Static Code Analysis: cppcheck
+
+## Project Assumptions
+The following assumptions are made for developing the project:
+- The environment is a standard warehouse
+- 2D Lidar is used for mapping and obstacle avoidance
+- The model includes a forklift that is attached to a turtlebot using a dummy joint that simulates a physical fixed joint
 
 
 
 ## How to build and run demo
 
 ```bash
-rm -rf build/ install/
-colcon build 
-source install/setup.bash
-ros2 launch my_controller run_demo.launch.py
+# rm -rf build/ install/
+# colcon build 
+# source install/setup.bash
+# ros2 launch my_controller run_demo.launch.py
 ```
 
 ## How to build for tests (unit test and integration test)
@@ -89,7 +99,7 @@ colcon build \
 open build/my_model/test_coverage/index.html
 ```
 
-### combined test coverage report
+### Combined test coverage report
 
 ``` bash
 ./do-tests.bash
