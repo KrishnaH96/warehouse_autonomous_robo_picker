@@ -1,8 +1,8 @@
 # ENPM808X-final-project-boilerplate
 
-[![codecov](https://codecov.io/gh/TommyChangUMD/ENPM808X-final-project-boilerplate/branch/main/graph/badge.svg?token=KRAHD3BZP7)](https://codecov.io/gh/TommyChangUMD/ENPM808X-final-project-boilerplate)
+[![codecov](https://codecov.io/gh/KrishnaH96/warehouse_autonomous_robo_picker/branch/main/graph/badge.svg)](https://codecov.io/gh/KrishnaH96/warehouse_autonomous_robo_picker)
 
-![CICD Workflow status](https://github.com/TommyChangUMD/ENPM808X-final-project-boilerplate/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
+![CICD Workflow status](https://github.com/KrishnaH96/warehouse_autonomous_robo_picker/actions/workflows/run-unit-test-and-upload-codecov.yml/badge.svg)
 
 # TurtleBot based fork-lift
 
