@@ -18,6 +18,8 @@
 
 [Link to Google sheet AIP](https://docs.google.com/spreadsheets/d/14opcHnxkf7GQsjTWjHkAuEvpMV1kIm0RZtOymTk42Ms/edit?usp=sharing)
 
+[Link to the video](https://drive.google.com/file/d/1SJqnY0vBAl8Dz5ixzDQ1vXLy5o8qw1dN/view?usp=drive_link)
+
 
 # Project Overview:
 
@@ -46,6 +48,11 @@ The module will be developed using the following technologies:
 - Build System: CMakes
 - Testing Framework: Google Test
 - Static Code Analysis: cppcheck
+
+## ROS REP's
+The following REP's are referred:
+- ROS REP105
+- ROS REP103
 
 ## Project Assumptions
 The following assumptions are made for developing the project:
