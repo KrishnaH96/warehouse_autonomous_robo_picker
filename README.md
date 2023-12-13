@@ -14,6 +14,11 @@
   
 - Abrarudin Syed
 
+[Link to Google Doc Sprint Planning](https://docs.google.com/document/d/1MMRjInUa4ZdvYnUj4sSJ6YccTy3mOgf2D5uMTAxesUA/edit?usp=sharing)
+
+[Link to Google sheet AIP](https://docs.google.com/spreadsheets/d/14opcHnxkf7GQsjTWjHkAuEvpMV1kIm0RZtOymTk42Ms/edit?usp=sharing)
+
+
 # Project Overview:
 
 ## Introduction
