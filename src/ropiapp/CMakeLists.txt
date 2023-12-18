@@ -1,15 +1,50 @@
 cmake_minimum_required(VERSION 3.8)
 project(ropiapp)
 
+# clangd support
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+execute_process(COMMAND "rm" "-f" "${CMAKE_SOURCE_DIR}/compile_commands.json")
+execute_process(COMMAND "ln" "-s" "-r" "${CMAKE_BINARY_DIR}/compile_commands.json" "${CMAKE_SOURCE_DIR}/")
+
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(nav2_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
+
+set(THIS_PACKAGE_INCLUDE_DEPENDS
+    rclcpp
+    rclcpp_action
+    std_msgs
+    geometry_msgs
+    nav2_msgs
+    action_msgs
+)
+
+include_directories(
+  ${CMAKE_SOURCE_DIR}/include
+  ${CMAKE_SOURCE_DIR}/include/ropiapp
+)
+
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
+
+# Build service node.
+add_executable(goalmanager src/GoalManager.cpp src/Context.cpp src/Constants.cpp)
+ament_target_dependencies(goalmanager rclcpp rclcpp_action geometry_msgs nav2_msgs action_msgs std_msgs)
+
+# Install targets.
+install(TARGETS
+  goalmanager
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
