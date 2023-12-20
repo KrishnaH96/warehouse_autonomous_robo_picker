@@ -33,15 +33,15 @@ We propose developing an autonomous warehouse collection robot using the simulat
 ## Modules
 The repository consists of following ROS2 packages:
  
-  - *Simulation*: We will use Gazebo and a custom warehouse model to simulate the environment
-  - *Modeling*: We will take the existing Turtle bot design and attach a fork list with prismatic join to the side of the robot using a dummy joint. We will also attach an RGB camera to the model for detecting the packages to be transferred.
-  - *SLAM*: We will use the ROS2 slam tool box for generating the 2D map and localization of the robot.
-  - *Navigation*: ROS2 Nav2 component will be integrated to the framework to perform autonomous navigation from start location to the end location.
-  - *Pick & Place*: A custom package will be developed to orient robot and perform pick & place using the fork-lift
+  - *Simulation*: We used Gazebo and a custom warehouse model to simulate the environment
+  - *Modeling*: We took the existing Turtle bot design and attach a fork list with prismatic join to the side of the robot using a dummy joint.  We attached an RGB camera to the model for detecting the packages to be transferred.
+  - *SLAM*: We used the ROS2 slam tool box for generating the 2D map and localization of the robot.
+  - *Navigation*: ROS2 Nav2 component integrated to the framework to perform autonomous navigation from start location to the end location.
+  - *Pick & Place*: A custom package developed to orient robot and perform pick & place using the fork-lift
 
 
 ## Technologies and Libraries
-The module will be developed using the following technologies:
+The module developed using the following technologies:
 - Programming Language: C++11/14
 - Libraries: ROS2 Gazebo ( Apache v2.0 ), ROS2 Nav2 ( SPDX-ID - Various Licenses ), 
 - ROS2 slam toolbox ( GPL v2.1 ).
@@ -54,12 +54,17 @@ The following REP's are referred:
 - ROS REP105
 - ROS REP103
 
+### Miscellaneous Dependencies:
+- bash
+- pip install lxml
+- pip3 install transforms3d
+- sudo apt install ros-humble-tf-transformations
+
 ## Project Assumptions
 The following assumptions are made for developing the project:
 - The environment is a standard warehouse
 - 2D Lidar is used for mapping and obstacle avoidance
 - The model includes a forklift that is attached to a turtlebot using a dummy joint that simulates a physical fixed joint
-
 
 
 ## How to build and run demo
@@ -81,8 +86,13 @@ colcon build --cmake-args -DCOVERAGE=1
 ## How to run tests (unit and integration)
 
 ```bash
-source install/setup.bash
-colcon test
+# source install/setup.bash
+# colcon test
+
+#Because of the recursive dependancies and dependencies on executable,
+# we could not get the colcon test to work as of now.
+# To run the test case please follow the below command
+./build/ropiapp/ropiapp_test
 ```
 
 ## How to generate coverage reports after running colcon test
@@ -90,7 +100,11 @@ colcon test
 First make sure we have run the unit test already.
 
 ```bash
-colcon test
+# colcon test
+#Because of the recursive dependancies and dependencies on executable,
+# we could not get the colcon test to work as of now.
+
+# we believe moving our classes from executable to library can make the colcon test work
 ```
 
 ### Test coverage report for `my_controller`:

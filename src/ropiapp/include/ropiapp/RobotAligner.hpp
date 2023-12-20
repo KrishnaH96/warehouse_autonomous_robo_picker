@@ -25,11 +25,13 @@
 #include <iostream>
 #include <string>
 
+#include "State.hpp"
+
 /**
  * @class RobotAligner
  * @brief A class representing a robot aligner for orientation and movement.
  */
-class RobotAligner {
+class RobotAligner: public State {
 public:
     /**
      * @brief Rotates the robot to align with a specified goal orientation.
@@ -49,14 +51,11 @@ public:
      */
     bool moveAlign();
 
-private:
     /**
-     * @brief The starting goal orientation or position for alignment.
+     * @brief State entry point
+     * 
      */
-    double startGoal;
+    void execute();
 
-    /**
-     * @brief The target goal orientation or position for alignment.
-     */
-    double endGoal;
+private:
 };
