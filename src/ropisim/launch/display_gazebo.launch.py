@@ -2,7 +2,10 @@ import launch
 from launch.substitutions import Command, LaunchConfiguration
 import launch_ros
 import os
-
+import launch_ros.descriptions
+from launch_ros.parameter_descriptions import ParameterValue  # Import ParameterValue
+from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler
+from launch.event_handlers import OnProcessExit
 def generate_launch_description():
     pkg_share = launch_ros.substitutions.FindPackageShare(package='ropisim').find('ropisim')
     default_model_path = os.path.join(pkg_share, 'urdf/box_bot.urdf')
@@ -28,7 +31,14 @@ def generate_launch_description():
     robot_state_publisher_node = launch_ros.actions.Node(
         package='robot_state_publisher',
         executable='robot_state_publisher',
-        parameters=[{'robot_description': Command(['xacro ', LaunchConfiguration('model')])}]
+        parameters=[
+            {
+                'robot_description': ParameterValue(
+                    Command(['xacro ', LaunchConfiguration('model')]),
+                    value_type=str  # Explicitly set the value type to string
+                )
+            }
+        ]
     )
     joint_state_publisher_node = launch_ros.actions.Node(
         package='joint_state_publisher',
@@ -42,6 +52,32 @@ def generate_launch_description():
         name='rviz2',
         output='screen',
         arguments=['-d', LaunchConfiguration('rvizconfig')],
+    )
+
+
+        # Joint State Broadcaster Node
+    joint_state_broadcaster_spawner = launch_ros.actions.Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["joint_state_broadcaster", "--controller-manager", "/controller_manager"],
+    )
+
+
+
+
+    # Joint Position Controller Node
+    robot_position_controller_spawner = launch_ros.actions.Node(
+        package="controller_manager",
+        executable="spawner",
+        arguments=["position_controller", "--controller-manager", "/controller_manager"],
+    )
+
+    # Delay start of robot_controller after `joint_state_broadcaster`
+    delay_robot_postion_controller_spawner_after_joint_state_broadcaster_spawner = RegisterEventHandler(
+        event_handler=OnProcessExit(
+            target_action=joint_state_broadcaster_spawner,
+            on_exit=[robot_position_controller_spawner],
+        )
     )
 
 
@@ -87,5 +123,7 @@ def generate_launch_description():
     ld.add_action(spawn_aruco_box)
     ld.add_action(gazebo_exec)
     ld.add_action(rviz_node)
+    ld.add_action(joint_state_broadcaster_spawner)
+    ld.add_action(delay_robot_postion_controller_spawner_after_joint_state_broadcaster_spawner)
 
     return ld
