@@ -91,8 +91,8 @@ colcon build --cmake-args -DCOVERAGE=1
 # colcon test
 
 #Because of the recursive dependancies and dependencies on executable,
-# we could not get the colcon test to work as of now
-# to run the test case please follow the below command
+# we could not get the colcon test to work as of now.
+# To run the test case please follow the below command
 ./build/ropiapp/ropiapp_test
 ```
 
@@ -101,7 +101,11 @@ colcon build --cmake-args -DCOVERAGE=1
 First make sure we have run the unit test already.
 
 ```bash
-colcon test
+# colcon test
+#Because of the recursive dependancies and dependencies on executable,
+# we could not get the colcon test to work as of now.
+
+# we believe moving our classes from executable to library can make the colcon test work
 ```
 
 ### Test coverage report for `my_controller`:
