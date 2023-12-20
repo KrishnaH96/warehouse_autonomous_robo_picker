@@ -38,12 +38,12 @@ include_directories(
 # find_package(<dependency> REQUIRED)
 
 # Build service node.
-add_executable(goalmanager src/GoalManager.cpp src/Context.cpp src/Constants.cpp)
-ament_target_dependencies(goalmanager rclcpp rclcpp_action geometry_msgs nav2_msgs action_msgs std_msgs)
+add_executable(pick_place_task src/GoalManager.cpp src/Context.cpp src/Constants.cpp)
+ament_target_dependencies(pick_place_task rclcpp rclcpp_action geometry_msgs nav2_msgs action_msgs std_msgs)
 
 # Install targets.
 install(TARGETS
-  goalmanager
+  pick_place_task
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
