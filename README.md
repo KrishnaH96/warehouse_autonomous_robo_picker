@@ -54,6 +54,12 @@ The following REP's are referred:
 - ROS REP105
 - ROS REP103
 
+### Miscellaneous Dependencies:
+bash
+pip install lxml
+pip3 install transforms3d
+sudo apt install ros-humble-tf-transformations
+
 ## Project Assumptions
 The following assumptions are made for developing the project:
 - The environment is a standard warehouse
