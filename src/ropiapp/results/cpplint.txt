@@ -1,0 +1,5 @@
+tej@tejpc:~/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker$ cpplint --filter=-build/c++11,+build/c++17,-build/namespaces,-build/include_order ./src/ropiapp/src/*.cpp 
+Done processing ./src/ropiapp/src/Constants.cpp
+Done processing ./src/ropiapp/src/Context.cpp
+Done processing ./src/ropiapp/src/DetectionAlgorithm.cpp
+Done processing ./src/ropiapp/src/GoalManager.cpp
