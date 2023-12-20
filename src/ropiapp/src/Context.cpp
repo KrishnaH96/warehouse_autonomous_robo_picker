@@ -7,14 +7,6 @@
 Context::Context()
     : Node("pick_and_place") {
 
-    RCLCPP_INFO(get_logger(), "Task started..");
-
-    std::shared_ptr<GoalManager> startGoal( new GoalManager(*this));
-    startGoal->SetPose(Constants::getInstance().startGoal);
-
-    runQueue.push(startGoal);
-
-    execute();
 }
 
 void Context::setState(std::shared_ptr<State> _state) {
@@ -33,6 +25,11 @@ int main(int argc, char **argv)
 {
   rclcpp::init(argc, argv);
   std::shared_ptr<Context> node =   std::make_shared<Context>();
+
+
+  std::shared_ptr<GoalManager> startGoal( new GoalManager(*node));
+  startGoal->SetPose(Constants::getInstance().startGoal);
+
   rclcpp::spin(node);
   rclcpp::shutdown();
   return 0;
