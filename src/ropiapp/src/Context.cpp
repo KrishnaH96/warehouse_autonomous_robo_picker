@@ -29,6 +29,7 @@ int main(int argc, char **argv)
 
   std::shared_ptr<GoalManager> startGoal( new GoalManager(*node));
   startGoal->SetPose(Constants::getInstance().startGoal);
+  node->setState(startGoal);
 
   rclcpp::spin(node);
   rclcpp::shutdown();
