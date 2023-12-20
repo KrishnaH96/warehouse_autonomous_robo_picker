@@ -87,8 +87,13 @@ colcon build --cmake-args -DCOVERAGE=1
 ## How to run tests (unit and integration)
 
 ```bash
-source install/setup.bash
-colcon test
+# source install/setup.bash
+# colcon test
+
+#Because of the recursive dependancies and dependencies on executable,
+# we could not get the colcon test to work as of now.
+# To run the test case please follow the below command
+./build/ropiapp/ropiapp_test
 ```
 
 ## How to generate coverage reports after running colcon test
@@ -96,7 +101,11 @@ colcon test
 First make sure we have run the unit test already.
 
 ```bash
-colcon test
+# colcon test
+#Because of the recursive dependancies and dependencies on executable,
+# we could not get the colcon test to work as of now.
+
+# we believe moving our classes from executable to library can make the colcon test work
 ```
 
 ### Test coverage report for `my_controller`:
