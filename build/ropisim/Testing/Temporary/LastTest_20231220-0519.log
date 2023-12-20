@@ -1,0 +1,308 @@
+Start testing: Dec 20 00:19 EST
+----------------------------------------------------------
+1/4 Testing: flake8
+1/4 Test: flake8
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml"
+Directory: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim
+"flake8" start time: Dec 20 00:19 EST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':
+ - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml
+from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler
+^
+from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler
+^
+from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler
+                                                   ^
+from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler
+                                                                  ^
+def generate_launch_description():
+^
+    # Define launch file arguments
+    ^
+    
+^
+                                        description='Flag to enable joint_state_publisher_gui')
+                                        ^
+    arg_model = launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,
+                                                                                                   ^
+                                        description='Absolute path to robot urdf file')
+                                        ^
+    arg_rvizconfig = launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path,
+                                                                                                   ^
+                                            description='Absolute path to rviz config file')
+                                            ^
+    robot_state_publisher_node = launch_ros.actions.Node(
+    ^
+    
+^
+        # Joint State Broadcaster Node
+        ^
+        # Joint State Broadcaster Node
+        ^
+    # Joint Position Controller Node
+    ^
+    delay_robot_postion_controller_spawner_after_joint_state_broadcaster_spawner = RegisterEventHandler(
+                                                                                                   ^
+    spawn_entity = launch_ros.actions.Node(
+    ^
+        # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',
+        ^
+        '-x', '0', '-y', '0', '-z', '0',
+        ^
+        '-R', '0', '-P', '0', '-Y', '1.722056'],
+        ^
+        # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',
+        ^
+        '-x', '0.0', '-y', '3.0', '-z', '0',
+        ^
+        '-R', '0', '-P', '0', '-Y', '1.722056'],
+        ^
+    gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')
+                 ^
+    gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')
+                                                                                                   ^
+  
+^
+    #Make launch description
+    ^
+    #Make launch description
+    ^
+    #Add launch arguments
+    ^
+    #Add nodes
+    ^
+    return ld             ^
+import os
+^
+from launch.substitutions import Command, LaunchConfiguration
+^
+from launch.substitutions import Command, LaunchConfiguration
+^
+    
+^
+    # Define launch file arguments
+    ^
+    
+^
+    
+^
+    navigation_launch = actions.IncludeLaunchDescription(
+    ^
+  
+^
+    #Make launch description
+    ^
+    #Make launch description
+    ^
+    #Add nodes
+    ^
+    #Add nodes
+    ^
+    return ld             ^
+1     E116 unexpected indentation (comment)
+9     E128 continuation line under-indented for visual indent
+1     E222 multiple spaces after operator
+2     E231 missing whitespace after ','
+5     E265 block comment should start with '# '
+1     E302 expected 2 blank lines, found 0
+10    E303 too many blank lines (2)
+4     E501 line too long (100 > 99 characters)
+5     F401 'launch.actions.IncludeLaunchDescription' imported but unused
+2     W292 no newline at end of file
+7     W293 blank line contains whitespace
+
+./launch/display_gazebo.launch.py:7:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused
+
+./launch/display_gazebo.launch.py:7:1: F401 'launch.actions.ExecuteProcess' imported but unused
+
+./launch/display_gazebo.launch.py:7:52: E231 missing whitespace after ','
+
+./launch/display_gazebo.launch.py:7:67: E231 missing whitespace after ','
+
+./launch/display_gazebo.launch.py:9:1: E302 expected 2 blank lines, found 0
+
+./launch/display_gazebo.launch.py:20:5: E303 too many blank lines (2)
+
+./launch/display_gazebo.launch.py:22:1: W293 blank line contains whitespace
+
+./launch/display_gazebo.launch.py:24:41: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:25:100: E501 line too long (100 > 99 characters)
+
+./launch/display_gazebo.launch.py:26:41: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:27:100: E501 line too long (116 > 99 characters)
+
+./launch/display_gazebo.launch.py:28:45: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:31:5: E303 too many blank lines (2)
+
+./launch/display_gazebo.launch.py:48:1: W293 blank line contains whitespace
+
+./launch/display_gazebo.launch.py:58:9: E303 too many blank lines (2)
+
+./launch/display_gazebo.launch.py:58:9: E116 unexpected indentation (comment)
+
+./launch/display_gazebo.launch.py:68:5: E303 too many blank lines (4)
+
+./launch/display_gazebo.launch.py:76:100: E501 line too long (104 > 99 characters)
+
+./launch/display_gazebo.launch.py:84:5: E303 too many blank lines (2)
+
+./launch/display_gazebo.launch.py:88:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:89:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:90:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:98:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:99:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:100:9: E128 continuation line under-indented for visual indent
+
+./launch/display_gazebo.launch.py:104:18: E222 multiple spaces after operator
+
+./launch/display_gazebo.launch.py:104:100: E501 line too long (171 > 99 characters)
+
+./launch/display_gazebo.launch.py:108:1: W293 blank line contains whitespace
+
+./launch/display_gazebo.launch.py:110:5: E303 too many blank lines (5)
+
+./launch/display_gazebo.launch.py:110:5: E265 block comment should start with '# '
+
+./launch/display_gazebo.launch.py:113:5: E265 block comment should start with '# '
+
+./launch/display_gazebo.launch.py:119:5: E265 block comment should start with '# '
+
+./launch/display_gazebo.launch.py:129:14: W292 no newline at end of file
+
+./launch/gazebo_nav.launch.py:1:1: F401 'os' imported but unused
+
+./launch/gazebo_nav.launch.py:4:1: F401 'launch.substitutions.Command' imported but unused
+
+./launch/gazebo_nav.launch.py:4:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused
+
+./launch/gazebo_nav.launch.py:14:1: W293 blank line contains whitespace
+
+./launch/gazebo_nav.launch.py:17:5: E303 too many blank lines (3)
+
+./launch/gazebo_nav.launch.py:36:1: W293 blank line contains whitespace
+
+./launch/gazebo_nav.launch.py:42:1: W293 blank line contains whitespace
+
+./launch/gazebo_nav.launch.py:44:5: E303 too many blank lines (2)
+
+./launch/gazebo_nav.launch.py:66:1: W293 blank line contains whitespace
+
+./launch/gazebo_nav.launch.py:68:5: E303 too many blank lines (2)
+
+./launch/gazebo_nav.launch.py:68:5: E265 block comment should start with '# '
+
+./launch/gazebo_nav.launch.py:72:5: E303 too many blank lines (2)
+
+./launch/gazebo_nav.launch.py:72:5: E265 block comment should start with '# '
+
+./launch/gazebo_nav.launch.py:79:14: W292 no newline at end of file
+
+
+2 files checked
+47 errors
+
+'E'-type errors: 33
+'F'-type errors: 5
+'W'-type errors: 9
+
+Checked files:
+
+* ./launch/display_gazebo.launch.py
+* ./launch/gazebo_nav.launch.py
+-- run_test.py: return code 1
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml'
+<end of output>
+Test time =   0.17 sec
+----------------------------------------------------------
+Test Failed.
+"flake8" end time: Dec 20 00:19 EST
+"flake8" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/4 Testing: lint_cmake
+2/4 Test: lint_cmake
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml"
+Directory: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim
+"lint_cmake" start time: Dec 20 00:19 EST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml'
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"lint_cmake" end time: Dec 20 00:19 EST
+"lint_cmake" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/4 Testing: pep257
+3/4 Test: pep257
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml"
+Directory: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim
+"pep257" start time: Dec 20 00:19 EST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml
+checking ./launch/display_gazebo.launch.py
+checking ./launch/gazebo_nav.launch.py
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml'
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"pep257" end time: Dec 20 00:19 EST
+"pep257" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/4 Testing: xmllint
+4/4 Test: xmllint
+Command: "/usr/bin/python3.10" "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml"
+Directory: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim
+"xmllint" start time: Dec 20 00:19 EST
+Output:
+----------------------------------------------------------
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':
+ - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml
+File 'package.xml' is valid
+
+No problems found
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml'
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"xmllint" end time: Dec 20 00:19 EST
+"xmllint" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Dec 20 00:19 EST
+
+flake8 =   0.17 sec*proc
+
+lint_cmake =   0.07 sec*proc
+
+linter =   0.49 sec*proc
+
+pep257 =   0.11 sec*proc
+
+xmllint =   0.14 sec*proc
+

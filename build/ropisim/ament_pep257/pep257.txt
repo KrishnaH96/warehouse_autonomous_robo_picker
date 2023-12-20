@@ -1,0 +1,10 @@
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':
+ - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml
+
+checking ./launch/display_gazebo.launch.py
+checking ./launch/gazebo_nav.launch.py
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml'

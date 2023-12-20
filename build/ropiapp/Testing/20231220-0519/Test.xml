@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20231220-0519-Experimental"
+	Name="tejpc"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="11.4.0"
+	OSName="Linux"
+	Hostname="tejpc"
+	OSRelease="6.4.3-060403-generic"
+	OSVersion="#202307110536 SMP PREEMPT_DYNAMIC Tue Jul 11 05:43:58 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="25"
+	ModelID="97"
+	ProcessorCacheSize="1024"
+	NumberOfLogicalCPU="32"
+	NumberOfPhysicalCPU="16"
+	TotalVirtualMemory="0"
+	TotalPhysicalMemory="31256"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="5086.69"
+	>
+	<Testing>
+		<StartDateTime>Dec 20 00:19 EST</StartDateTime>
+		<StartTestTime>1703049577</StartTestTime>
+		<TestList>
+			<Test>./ropiapp_test</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>ropiapp_test</Name>
+			<Path>.</Path>
+			<FullName>./ropiapp_test</FullName>
+			<FullCommandLine>/usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml" "--package-name" "ropiapp" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ament_cmake_gtest/ropiapp_test.txt" "--command" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test" "--gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0348838</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml" "--package-name" "ropiapp" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ament_cmake_gtest/ropiapp_test.txt" "--command" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test" "--gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value>-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp':
+ - /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test --gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from context_test
+[ RUN      ] context_test.execute_verification
+[       OK ] context_test.execute_verification (0 ms)
+[----------] 1 test from context_test (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+-- run_test.py: return code 0
+-- run_test.py: inject classname prefix into gtest result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'
+</Value>
+				</Measurement>
+			</Results>
+			<Labels>
+				<Label>gtest</Label>
+			</Labels>
+		</Test>
+		<EndDateTime>Dec 20 00:19 EST</EndDateTime>
+		<EndTestTime>1703049577</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

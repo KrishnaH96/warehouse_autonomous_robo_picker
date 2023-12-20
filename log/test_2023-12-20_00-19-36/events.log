@@ -1,0 +1,781 @@
+[0.000000] (-) TimerEvent: {}
+[0.000234] (ropiapp) JobQueued: {'identifier': 'ropiapp', 'dependencies': OrderedDict([('ropiapp', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp')])}
+[0.000444] (ropinav) JobQueued: {'identifier': 'ropinav', 'dependencies': OrderedDict([('ropinav', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav')])}
+[0.000614] (ropisim) JobQueued: {'identifier': 'ropisim', 'dependencies': OrderedDict([('ropisim', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim')])}
+[0.000629] (ropislam) JobQueued: {'identifier': 'ropislam', 'dependencies': OrderedDict([('ropislam', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam')])}
+[0.000640] (ros2_aruco) JobQueued: {'identifier': 'ros2_aruco', 'dependencies': OrderedDict([('ros2_aruco', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco')])}
+[0.000650] (ros2_aruco_interfaces) JobQueued: {'identifier': 'ros2_aruco_interfaces', 'dependencies': OrderedDict([('ros2_aruco_interfaces', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces')])}
+[0.000661] (ropiapp) JobStarted: {'identifier': 'ropiapp'}
+[0.027505] (ropinav) JobStarted: {'identifier': 'ropinav'}
+[0.052855] (ropisim) JobStarted: {'identifier': 'ropisim'}
+[0.078255] (ropislam) JobStarted: {'identifier': 'ropislam'}
+[0.099879] (-) TimerEvent: {}
+[0.104258] (ros2_aruco) JobStarted: {'identifier': 'ros2_aruco'}
+[0.129928] (ros2_aruco_interfaces) JobStarted: {'identifier': 'ros2_aruco_interfaces'}
+[0.199965] (-) TimerEvent: {}
+[0.283144] (ros2_aruco) Command: {'cmd': ['/usr/bin/python3', '-m', 'pytest'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'tej', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/tej', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'TERM_PROGRAM_VERSION': '1.85.1', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '2702', 'SYSTEMD_EXEC_PID': '3053', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '4826', 'COLCON_PREFIX_PATH': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'tej', 'JOURNAL_STREAM': '8:55646', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'tej', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin', 'SESSION_MANAGER': 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034', 'INVOCATION_ID': '38048f4dcb7f4d09b65999fb8378a1d9', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'vscode', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/usr/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp', 'PYTEST_ADDOPTS': '--tb=short --junit-xml=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco/pytest.xml --junit-prefix=ros2_aruco -o cache_dir=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco/.pytest_cache'}, 'shell': False}
+[0.285863] (ropiapp) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tej'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tej'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2702'), ('SYSTEMD_EXEC_PID', '3053'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4826'), ('COLCON_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tej'), ('JOURNAL_STREAM', '8:55646'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tej'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin'), ('SESSION_MANAGER', 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034'), ('INVOCATION_ID', '38048f4dcb7f4d09b65999fb8378a1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav')]), 'shell': False}
+[0.286557] (ropinav) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tej'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tej'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2702'), ('SYSTEMD_EXEC_PID', '3053'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4826'), ('COLCON_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tej'), ('JOURNAL_STREAM', '8:55646'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tej'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin'), ('SESSION_MANAGER', 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034'), ('INVOCATION_ID', '38048f4dcb7f4d09b65999fb8378a1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp')]), 'shell': False}
+[0.287299] (ropisim) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tej'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tej'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2702'), ('SYSTEMD_EXEC_PID', '3053'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4826'), ('COLCON_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tej'), ('JOURNAL_STREAM', '8:55646'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tej'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin'), ('SESSION_MANAGER', 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034'), ('INVOCATION_ID', '38048f4dcb7f4d09b65999fb8378a1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp')]), 'shell': False}
+[0.288220] (ropislam) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tej'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tej'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2702'), ('SYSTEMD_EXEC_PID', '3053'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4826'), ('COLCON_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tej'), ('JOURNAL_STREAM', '8:55646'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tej'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin'), ('SESSION_MANAGER', 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034'), ('INVOCATION_ID', '38048f4dcb7f4d09b65999fb8378a1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp')]), 'shell': False}
+[0.291265] (ros2_aruco_interfaces) Command: {'cmd': ['/usr/bin/ctest', '-C', 'Release', '-D', 'ExperimentalTest', '--no-compress-output', '-V', '--force-new-ctest-process'], 'cwd': '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tej'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/tej'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('TERM_PROGRAM_VERSION', '1.85.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '2702'), ('SYSTEMD_EXEC_PID', '3053'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '4826'), ('COLCON_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'tej'), ('JOURNAL_STREAM', '8:55646'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tej'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/tej/.local/bin:/home/tej/bin:/opt/ros/humble/bin:/home/tej/.local/bin:/home/tej/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/tej/.config/fzf/bin'), ('SESSION_MANAGER', 'local/tejpc:@/tmp/.ICE-unix/3034,unix/tejpc:/tmp/.ICE-unix/3034'), ('INVOCATION_ID', '38048f4dcb7f4d09b65999fb8378a1d9'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/usr/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces/local/lib/python3.10/dist-packages:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp')]), 'shell': False}
+[0.292309] (ropiapp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini\n'}
+[0.292384] (ropiapp) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini\n'}
+[0.292414] (ropiapp) StdoutLine: {'line': b'   Site: tejpc\n'}
+[0.292439] (ropiapp) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.292463] (ropiapp) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.292487] (ropiapp) StdoutLine: {'line': b'Create new tag: 20231220-0519 - Experimental\n'}
+[0.292511] (ropiapp) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini\n'}
+[0.292534] (ropiapp) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini\n'}
+[0.292557] (ropiapp) StdoutLine: {'line': b'Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp\n'}
+[0.292579] (ropiapp) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.292602] (ropinav) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CTestConfiguration.ini\n'}
+[0.292634] (ropinav) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CTestConfiguration.ini\n'}
+[0.292659] (ropiapp) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.292682] (ropinav) StdoutLine: {'line': b'   Site: tejpc\n'}
+[0.292705] (ropinav) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.292727] (ropinav) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.292749] (ropinav) StdoutLine: {'line': b'Create new tag: 20231220-0519 - Experimental\n'}
+[0.292772] (ropinav) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CTestConfiguration.ini\n'}
+[0.292795] (ropinav) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CTestConfiguration.ini\n'}
+[0.292817] (ropinav) StdoutLine: {'line': b'Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav\n'}
+[0.292841] (ropinav) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.292863] (ropinav) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.292885] (ropinav) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.292908] (ropinav) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.292930] (ropinav) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.292953] (ropinav) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.292975] (ropinav) StdoutLine: {'line': b'test 1\n'}
+[0.292997] (ropinav) StdoutLine: {'line': b'    Start 1: flake8\n'}
+[0.293019] (ropinav) StdoutLine: {'line': b'\n'}
+[0.293042] (ropinav) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/flake8.xunit.xml" "--package-name" "ropinav" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/flake8.xunit.xml"\n'}
+[0.293068] (ropinav) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.293090] (ropiapp) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.293112] (ropiapp) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.293133] (ropiapp) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.293155] (ropiapp) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.293200] (ropiapp) StdoutLine: {'line': b'test 1\n'}
+[0.293223] (ropiapp) StdoutLine: {'line': b'    Start 1: ropiapp_test\n'}
+[0.293246] (ropiapp) StdoutLine: {'line': b'\n'}
+[0.293268] (ropiapp) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml" "--package-name" "ropiapp" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ament_cmake_gtest/ropiapp_test.txt" "--command" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test" "--gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml"\n'}
+[0.293295] (ropiapp) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.293330] (ropisim) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/CTestConfiguration.ini\n'}
+[0.293369] (ropisim) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/CTestConfiguration.ini\n'}
+[0.293399] (ropisim) StdoutLine: {'line': b'   Site: tejpc\n'}
+[0.293421] (ropisim) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.293444] (ropisim) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.293467] (ropisim) StdoutLine: {'line': b'Create new tag: 20231220-0519 - Experimental\n'}
+[0.293489] (ropisim) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/CTestConfiguration.ini\n'}
+[0.293513] (ropisim) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/CTestConfiguration.ini\n'}
+[0.293540] (ropisim) StdoutLine: {'line': b'Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim\n'}
+[0.293572] (ropisim) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.293595] (ropisim) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.293619] (ropisim) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.293643] (ropisim) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.293685] (ropisim) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.293711] (ropisim) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.293735] (ropisim) StdoutLine: {'line': b'test 1\n'}
+[0.293758] (ropisim) StdoutLine: {'line': b'    Start 1: flake8\n'}
+[0.293781] (ropisim) StdoutLine: {'line': b'\n'}
+[0.293803] (ropisim) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml"\n'}
+[0.293829] (ropisim) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.293872] (ropislam) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/CTestConfiguration.ini\n'}
+[0.293919] (ropislam) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/CTestConfiguration.ini\n'}
+[0.293943] (ropislam) StdoutLine: {'line': b'   Site: tejpc\n'}
+[0.293967] (ropislam) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.293989] (ropislam) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.294013] (ropislam) StdoutLine: {'line': b'Create new tag: 20231220-0519 - Experimental\n'}
+[0.294036] (ropislam) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/CTestConfiguration.ini\n'}
+[0.294059] (ropislam) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/CTestConfiguration.ini\n'}
+[0.294082] (ropislam) StdoutLine: {'line': b'Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam\n'}
+[0.294114] (ropislam) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.294160] (ropislam) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.294185] (ropislam) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.294207] (ropislam) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.294230] (ropislam) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.294252] (ropislam) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.294274] (ropislam) StdoutLine: {'line': b'test 1\n'}
+[0.294296] (ropislam) StdoutLine: {'line': b'    Start 1: flake8\n'}
+[0.294320] (ropislam) StdoutLine: {'line': b'\n'}
+[0.294342] (ropislam) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/flake8.xunit.xml" "--package-name" "ropislam" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/ament_flake8/flake8.txt" "--command" "/opt/ros/humble/bin/ament_flake8" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/flake8.xunit.xml"\n'}
+[0.294373] (ropislam) StdoutLine: {'line': b'1: Test timeout computed to be: 60\n'}
+[0.294559] (ros2_aruco_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini\n'}
+[0.294591] (ros2_aruco_interfaces) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini\n'}
+[0.294615] (ros2_aruco_interfaces) StdoutLine: {'line': b'   Site: tejpc\n'}
+[0.294638] (ros2_aruco_interfaces) StdoutLine: {'line': b'   Build name: (empty)\n'}
+[0.294714] (ros2_aruco_interfaces) StdoutLine: {'line': b' Add coverage exclude regular expressions.\n'}
+[0.294744] (ros2_aruco_interfaces) StdoutLine: {'line': b'Create new tag: 20231220-0519 - Experimental\n'}
+[0.294770] (ros2_aruco_interfaces) StdoutLine: {'line': b'UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini\n'}
+[0.294797] (ros2_aruco_interfaces) StdoutLine: {'line': b'Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini\n'}
+[0.294824] (ros2_aruco_interfaces) StdoutLine: {'line': b'Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces\n'}
+[0.294871] (ros2_aruco_interfaces) StdoutLine: {'line': b'Constructing a list of tests\n'}
+[0.294947] (ros2_aruco_interfaces) StdoutLine: {'line': b'Done constructing a list of tests\n'}
+[0.294974] (ros2_aruco_interfaces) StdoutLine: {'line': b'Updating test list for fixtures\n'}
+[0.294997] (ros2_aruco_interfaces) StdoutLine: {'line': b'Added 0 tests to meet fixture requirements\n'}
+[0.295019] (ros2_aruco_interfaces) StdoutLine: {'line': b'Checking test dependency graph...\n'}
+[0.295041] (ros2_aruco_interfaces) StdoutLine: {'line': b'Checking test dependency graph end\n'}
+[0.295063] (ros2_aruco_interfaces) StdoutLine: {'line': b'test 1\n'}
+[0.295085] (ros2_aruco_interfaces) StdoutLine: {'line': b'    Start 1: copyright\n'}
+[0.295108] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.295130] (ros2_aruco_interfaces) StdoutLine: {'line': b'1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml"\n'}
+[0.295159] (ros2_aruco_interfaces) StdoutLine: {'line': b'1: Test timeout computed to be: 200\n'}
+[0.300014] (-) TimerEvent: {}
+[0.320421] (ropinav) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropinav':\n"}
+[0.320533] (ropinav) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/flake8.xunit.xml\n'}
+[0.320861] (ropiapp) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp':\n"}
+[0.320928] (ropiapp) StdoutLine: {'line': b'1:  - /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test --gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml\n'}
+[0.321751] (ropisim) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':\n"}
+[0.321818] (ropisim) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml\n'}
+[0.321846] (ropiapp) StdoutLine: {'line': b'1: [==========] Running 1 test from 1 test suite.\n'}
+[0.321874] (ropiapp) StdoutLine: {'line': b'1: [----------] Global test environment set-up.\n'}
+[0.321900] (ropiapp) StdoutLine: {'line': b'1: [----------] 1 test from context_test\n'}
+[0.321924] (ropiapp) StdoutLine: {'line': b'1: [ RUN      ] context_test.execute_verification\n'}
+[0.321949] (ropiapp) StdoutLine: {'line': b'1: [       OK ] context_test.execute_verification (0 ms)\n'}
+[0.321986] (ropiapp) StdoutLine: {'line': b'1: [----------] 1 test from context_test (0 ms total)\n'}
+[0.322009] (ropiapp) StdoutLine: {'line': b'1: \n'}
+[0.322031] (ropiapp) StdoutLine: {'line': b'1: [----------] Global test environment tear-down\n'}
+[0.322063] (ropiapp) StdoutLine: {'line': b'1: [==========] 1 test from 1 test suite ran. (0 ms total)\n'}
+[0.322086] (ropiapp) StdoutLine: {'line': b'1: [  PASSED  ] 1 test.\n'}
+[0.322115] (ropiapp) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.322141] (ropiapp) StdoutLine: {'line': b"1: -- run_test.py: inject classname prefix into gtest result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'\n"}
+[0.322168] (ropiapp) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'\n"}
+[0.322372] (ros2_aruco_interfaces) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':\n"}
+[0.322412] (ros2_aruco_interfaces) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml\n'}
+[0.323300] (ropislam) StdoutLine: {'line': b"1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropislam':\n"}
+[0.323369] (ropislam) StdoutLine: {'line': b'1:  - /opt/ros/humble/bin/ament_flake8 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/flake8.xunit.xml\n'}
+[0.326687] (ropiapp) StdoutLine: {'line': b'1/1 Test #1: ropiapp_test .....................   Passed    0.03 sec\n'}
+[0.326824] (ropiapp) StdoutLine: {'line': b'\n'}
+[0.326863] (ropiapp) StdoutLine: {'line': b'\x1b[0;32m100% tests passed\x1b[0;0m, 0 tests failed\x1b[0;0m out of 1\n'}
+[0.326888] (ropiapp) StdoutLine: {'line': b'\n'}
+[0.326911] (ropiapp) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.326937] (ropiapp) StdoutLine: {'line': b'gtest    =   0.03 sec*proc (1 test)\n'}
+[0.326960] (ropiapp) StdoutLine: {'line': b'\n'}
+[0.326981] (ropiapp) StdoutLine: {'line': b'Total Test time (real) =   0.04 sec\n'}
+[0.331883] (ropiapp) CommandEnded: {'returncode': 0}
+[0.332150] (ropiapp) JobEnded: {'identifier': 'ropiapp', 'rc': 0}
+[0.368292] (ros2_aruco_interfaces) StdoutLine: {'line': b'1: No repository roots and files found\n'}
+[0.368370] (ros2_aruco_interfaces) StdoutLine: {'line': b'1: No problems found, checked 0 files\n'}
+[0.373009] (ros2_aruco_interfaces) StdoutLine: {'line': b'1: -- run_test.py: return code 0\n'}
+[0.373171] (ros2_aruco_interfaces) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml'\n"}
+[0.378012] (ros2_aruco_interfaces) StdoutLine: {'line': b'1/3 Test #1: copyright ........................   Passed    0.08 sec\n'}
+[0.378201] (ros2_aruco_interfaces) StdoutLine: {'line': b'test 2\n'}
+[0.378286] (ros2_aruco_interfaces) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[0.378355] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.378419] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml"\n'}
+[0.378489] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.400113] (-) TimerEvent: {}
+[0.405768] (ros2_aruco_interfaces) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':\n"}
+[0.405919] (ros2_aruco_interfaces) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml\n'}
+[0.412568] (ropislam) StdoutLine: {'line': b'1: from launch import launch_description_sources\n'}
+[0.412737] (ropislam) StdoutLine: {'line': b'1: ^\n'}
+[0.412775] (ropislam) StdoutLine: {'line': b'1: from launch import actions\n'}
+[0.412805] (ropislam) StdoutLine: {'line': b'1: ^\n'}
+[0.412832] (ropislam) StdoutLine: {'line': b'1: from launch_ros.actions import Node\n'}
+[0.412861] (ropislam) StdoutLine: {'line': b'1: ^\n'}
+[0.412886] (ropislam) StdoutLine: {'line': b'1:     \n'}
+[0.412911] (ropislam) StdoutLine: {'line': b'1: ^\n'}
+[0.412935] (ropislam) StdoutLine: {'line': b'1:     # Define launch file arguments\n'}
+[0.412962] (ropislam) StdoutLine: {'line': b'1:     ^\n'}
+[0.412987] (ropislam) StdoutLine: {'line': b'1:    \n'}
+[0.413013] (ropislam) StdoutLine: {'line': b'1: ^\n'}
+[0.413039] (ropislam) StdoutLine: {'line': b"1:     # slam_toolbox_dir = get_package_share_directory('slam_toolbox')\n"}
+[0.413068] (ropislam) StdoutLine: {'line': b'1:     ^\n'}
+[0.413093] (ropislam) StdoutLine: {'line': b'1:     ld.add_action(arg_sim)\n'}
+[0.413119] (ropislam) StdoutLine: {'line': b'1:     ^\n'}
+[0.413147] (ropislam) StdoutLine: {'line': b'1:     return ld             ^\n'}
+[0.413174] (ropislam) StdoutLine: {'line': b'1: 3     E303 too many blank lines (2)\n'}
+[0.413200] (ropislam) StdoutLine: {'line': b"1: 3     F401 'launch.launch_description_sources' imported but unused\n"}
+[0.413227] (ropislam) StdoutLine: {'line': b'1: 1     W292 no newline at end of file\n'}
+[0.413326] (ropislam) StdoutLine: {'line': b'1: 2     W293 blank line contains whitespace\n'}
+[0.413351] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413375] (ropislam) StdoutLine: {'line': b"1: ./launch/slam.launch.py:4:1: F401 'launch.launch_description_sources' imported but unused\n"}
+[0.413399] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413422] (ropislam) StdoutLine: {'line': b"1: ./launch/slam.launch.py:5:1: F401 'launch.actions' imported but unused\n"}
+[0.413449] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413472] (ropislam) StdoutLine: {'line': b"1: ./launch/slam.launch.py:7:1: F401 'launch_ros.actions.Node' imported but unused\n"}
+[0.413496] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413518] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:16:1: W293 blank line contains whitespace\n'}
+[0.413546] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413570] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:17:5: E303 too many blank lines (2)\n'}
+[0.413594] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413616] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:29:1: W293 blank line contains whitespace\n'}
+[0.413639] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413661] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:31:5: E303 too many blank lines (2)\n'}
+[0.413684] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413707] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:48:5: E303 too many blank lines (2)\n'}
+[0.413730] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413752] (ropislam) StdoutLine: {'line': b'1: ./launch/slam.launch.py:51:14: W292 no newline at end of file\n'}
+[0.413775] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413797] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413820] (ropislam) StdoutLine: {'line': b'1: 1 files checked\n'}
+[0.413842] (ropislam) StdoutLine: {'line': b'1: 9 errors\n'}
+[0.413866] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413891] (ropislam) StdoutLine: {'line': b"1: 'E'-type errors: 3\n"}
+[0.413915] (ropislam) StdoutLine: {'line': b"1: 'F'-type errors: 3\n"}
+[0.413939] (ropislam) StdoutLine: {'line': b"1: 'W'-type errors: 3\n"}
+[0.413965] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.413989] (ropislam) StdoutLine: {'line': b'1: Checked files:\n'}
+[0.414013] (ropislam) StdoutLine: {'line': b'1: \n'}
+[0.414038] (ropislam) StdoutLine: {'line': b'1: * ./launch/slam.launch.py\n'}
+[0.415199] (ropinav) StdoutLine: {'line': b"1:                     #    'recoveries_server',\n"}
+[0.415259] (ropinav) StdoutLine: {'line': b'1:                     ^\n'}
+[0.415383] (ropinav) StdoutLine: {'line': b"1:                         'behavior_server',\n"}
+[0.415415] (ropinav) StdoutLine: {'line': b'1:                         ^\n'}
+[0.415441] (ropinav) StdoutLine: {'line': b'1: 1     E127 continuation line over-indented for visual indent\n'}
+[0.415467] (ropinav) StdoutLine: {'line': b'1: 1     E128 continuation line under-indented for visual indent\n'}
+[0.415492] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415517] (ropinav) StdoutLine: {'line': b'1: ./launch/navigation_launch.py:37:21: E128 continuation line under-indented for visual indent\n'}
+[0.415541] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415565] (ropinav) StdoutLine: {'line': b'1: ./launch/navigation_launch.py:38:25: E127 continuation line over-indented for visual indent\n'}
+[0.415590] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415615] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415639] (ropinav) StdoutLine: {'line': b'1: 1 files checked\n'}
+[0.415663] (ropinav) StdoutLine: {'line': b'1: 2 errors\n'}
+[0.415688] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415711] (ropinav) StdoutLine: {'line': b"1: 'E'-type errors: 2\n"}
+[0.415736] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415762] (ropinav) StdoutLine: {'line': b'1: Checked files:\n'}
+[0.415787] (ropinav) StdoutLine: {'line': b'1: \n'}
+[0.415811] (ropinav) StdoutLine: {'line': b'1: * ./launch/navigation_launch.py\n'}
+[0.418626] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m============================= test session starts ==============================\x1b[0m\n'}
+[0.418700] (ros2_aruco) StdoutLine: {'line': b'platform linux -- Python 3.10.12, pytest-6.2.5, py-1.10.0, pluggy-0.13.0\n'}
+[0.420753] (ros2_aruco) StdoutLine: {'line': b'cachedir: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco/.pytest_cache\n'}
+[0.420846] (ros2_aruco) StdoutLine: {'line': b'rootdir: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco\n'}
+[0.420899] (ros2_aruco) StdoutLine: {'line': b'plugins: launch-testing-ros-0.19.6, launch-testing-1.0.4, ament-pep257-0.12.9, ament-flake8-0.12.9, ament-lint-0.12.9, ament-xmllint-0.12.9, ament-copyright-0.12.9, cov-3.0.0, colcon-core-0.15.1\n'}
+[0.430533] (ropislam) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.430640] (ropislam) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/flake8.xunit.xml'\n"}
+[0.431925] (ropinav) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.431965] (ropinav) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/flake8.xunit.xml'\n"}
+[0.435912] (ropislam) StdoutLine: {'line': b'1/4 Test #1: flake8 ...........................***Failed    0.14 sec\n'}
+[0.435983] (ropislam) StdoutLine: {'line': b'test 2\n'}
+[0.436060] (ropislam) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[0.436086] (ropislam) StdoutLine: {'line': b'\n'}
+[0.436112] (ropislam) StdoutLine: {'line': b'2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml" "--package-name" "ropislam" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml"\n'}
+[0.436152] (ropislam) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.437174] (ropinav) StdoutLine: {'line': b'1/4 Test #1: flake8 ...........................***Failed    0.15 sec\n'}
+[0.437319] (ropinav) StdoutLine: {'line': b'test 2\n'}
+[0.437355] (ropinav) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[0.437388] (ropinav) StdoutLine: {'line': b'\n'}
+[0.437413] (ropinav) StdoutLine: {'line': b'2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/lint_cmake.xunit.xml" "--package-name" "ropinav" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/lint_cmake.xunit.xml"\n'}
+[0.437442] (ropinav) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.437669] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: CMakeLists.txt:28: Mismatching spaces inside () after command [whitespace/mismatch]\n'}
+[0.437705] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: CMakeLists.txt:32: Weird indentation; use 2 spaces [whitespace/indent]\n'}
+[0.437731] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: \n'}
+[0.437755] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: \n'}
+[0.437777] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: 2 errors\n'}
+[0.442397] (ros2_aruco_interfaces) StdoutLine: {'line': b'2: -- run_test.py: return code 1\n'}
+[0.442468] (ros2_aruco_interfaces) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml'\n"}
+[0.447565] (ropisim) StdoutLine: {'line': b'1: from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler\n'}
+[0.447755] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.447788] (ropisim) StdoutLine: {'line': b'1: from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler\n'}
+[0.447816] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.447841] (ropisim) StdoutLine: {'line': b'1: from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler\n'}
+[0.447867] (ropisim) StdoutLine: {'line': b'1:                                                    ^\n'}
+[0.447890] (ropisim) StdoutLine: {'line': b'1: from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler\n'}
+[0.447913] (ropisim) StdoutLine: {'line': b'1:                                                                   ^\n'}
+[0.447936] (ropisim) StdoutLine: {'line': b'1: def generate_launch_description():\n'}
+[0.447958] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.447980] (ropisim) StdoutLine: {'line': b'1:     # Define launch file arguments\n'}
+[0.448003] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.448025] (ropisim) StdoutLine: {'line': b'1:     \n'}
+[0.448047] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.448069] (ropisim) StdoutLine: {'line': b"1:                                         description='Flag to enable joint_state_publisher_gui')\n"}
+[0.448092] (ropisim) StdoutLine: {'line': b'1:                                         ^\n'}
+[0.448114] (ropisim) StdoutLine: {'line': b"1:     arg_model = launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,\n"}
+[0.448137] (ropisim) StdoutLine: {'line': b'1:                                                                                                    ^\n'}
+[0.448170] (ropisim) StdoutLine: {'line': b"1:                                         description='Absolute path to robot urdf file')\n"}
+[0.448194] (ropisim) StdoutLine: {'line': b'1:                                         ^\n'}
+[0.448217] (ropisim) StdoutLine: {'line': b"1:     arg_rvizconfig = launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path,\n"}
+[0.448240] (ropisim) StdoutLine: {'line': b'1:                                                                                                    ^\n'}
+[0.448262] (ropisim) StdoutLine: {'line': b"1:                                             description='Absolute path to rviz config file')\n"}
+[0.448284] (ropisim) StdoutLine: {'line': b'1:                                             ^\n'}
+[0.448306] (ropisim) StdoutLine: {'line': b'1:     robot_state_publisher_node = launch_ros.actions.Node(\n'}
+[0.448329] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.448355] (ropisim) StdoutLine: {'line': b'1:     \n'}
+[0.448403] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.448427] (ropisim) StdoutLine: {'line': b'1:         # Joint State Broadcaster Node\n'}
+[0.448450] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448473] (ropisim) StdoutLine: {'line': b'1:         # Joint State Broadcaster Node\n'}
+[0.448496] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448519] (ropisim) StdoutLine: {'line': b'1:     # Joint Position Controller Node\n'}
+[0.448542] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.448565] (ropisim) StdoutLine: {'line': b'1:     delay_robot_postion_controller_spawner_after_joint_state_broadcaster_spawner = RegisterEventHandler(\n'}
+[0.448589] (ropisim) StdoutLine: {'line': b'1:                                                                                                    ^\n'}
+[0.448612] (ropisim) StdoutLine: {'line': b'1:     spawn_entity = launch_ros.actions.Node(\n'}
+[0.448637] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.448660] (ropisim) StdoutLine: {'line': b"1:         # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',\n"}
+[0.448697] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448720] (ropisim) StdoutLine: {'line': b"1:         '-x', '0', '-y', '0', '-z', '0',\n"}
+[0.448748] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448770] (ropisim) StdoutLine: {'line': b"1:         '-R', '0', '-P', '0', '-Y', '1.722056'],\n"}
+[0.448792] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448814] (ropisim) StdoutLine: {'line': b"1:         # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',\n"}
+[0.448836] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448860] (ropisim) StdoutLine: {'line': b"1:         '-x', '0.0', '-y', '3.0', '-z', '0',\n"}
+[0.448884] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448906] (ropisim) StdoutLine: {'line': b"1:         '-R', '0', '-P', '0', '-Y', '1.722056'],\n"}
+[0.448927] (ropisim) StdoutLine: {'line': b'1:         ^\n'}
+[0.448949] (ropisim) StdoutLine: {'line': b"1:     gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')\n"}
+[0.448972] (ropisim) StdoutLine: {'line': b'1:                  ^\n'}
+[0.448994] (ropisim) StdoutLine: {'line': b"1:     gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')\n"}
+[0.449017] (ropisim) StdoutLine: {'line': b'1:                                                                                                    ^\n'}
+[0.449041] (ropisim) StdoutLine: {'line': b'1:   \n'}
+[0.449063] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449086] (ropisim) StdoutLine: {'line': b'1:     #Make launch description\n'}
+[0.449107] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449129] (ropisim) StdoutLine: {'line': b'1:     #Make launch description\n'}
+[0.449152] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449174] (ropisim) StdoutLine: {'line': b'1:     #Add launch arguments\n'}
+[0.449197] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449220] (ropisim) StdoutLine: {'line': b'1:     #Add nodes\n'}
+[0.449243] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449266] (ropisim) StdoutLine: {'line': b'1:     return ld             ^\n'}
+[0.449288] (ropisim) StdoutLine: {'line': b'1: import os\n'}
+[0.449310] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449332] (ropisim) StdoutLine: {'line': b'1: from launch.substitutions import Command, LaunchConfiguration\n'}
+[0.449355] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449376] (ropisim) StdoutLine: {'line': b'1: from launch.substitutions import Command, LaunchConfiguration\n'}
+[0.449398] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449420] (ropisim) StdoutLine: {'line': b'1:     \n'}
+[0.449441] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449463] (ropisim) StdoutLine: {'line': b'1:     # Define launch file arguments\n'}
+[0.449485] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449507] (ropisim) StdoutLine: {'line': b'1:     \n'}
+[0.449528] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449550] (ropisim) StdoutLine: {'line': b'1:     \n'}
+[0.449571] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449593] (ropisim) StdoutLine: {'line': b'1:     navigation_launch = actions.IncludeLaunchDescription(\n'}
+[0.449615] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449638] (ropisim) StdoutLine: {'line': b'1:   \n'}
+[0.449659] (ropisim) StdoutLine: {'line': b'1: ^\n'}
+[0.449681] (ropisim) StdoutLine: {'line': b'1:     #Make launch description\n'}
+[0.449702] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449723] (ropisim) StdoutLine: {'line': b'1:     #Make launch description\n'}
+[0.449744] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449766] (ropisim) StdoutLine: {'line': b'1:     #Add nodes\n'}
+[0.449787] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449808] (ropisim) StdoutLine: {'line': b'1:     #Add nodes\n'}
+[0.449830] (ropisim) StdoutLine: {'line': b'1:     ^\n'}
+[0.449851] (ropisim) StdoutLine: {'line': b'1:     return ld             ^\n'}
+[0.449874] (ropisim) StdoutLine: {'line': b'1: 1     E116 unexpected indentation (comment)\n'}
+[0.449896] (ropisim) StdoutLine: {'line': b'1: 9     E128 continuation line under-indented for visual indent\n'}
+[0.449917] (ropisim) StdoutLine: {'line': b'1: 1     E222 multiple spaces after operator\n'}
+[0.449939] (ropisim) StdoutLine: {'line': b"1: 2     E231 missing whitespace after ','\n"}
+[0.449960] (ropisim) StdoutLine: {'line': b"1: 5     E265 block comment should start with '# '\n"}
+[0.449981] (ropisim) StdoutLine: {'line': b'1: 1     E302 expected 2 blank lines, found 0\n'}
+[0.450003] (ropisim) StdoutLine: {'line': b'1: 10    E303 too many blank lines (2)\n'}
+[0.450025] (ropisim) StdoutLine: {'line': b'1: 4     E501 line too long (100 > 99 characters)\n'}
+[0.450046] (ropisim) StdoutLine: {'line': b"1: 5     F401 'launch.actions.IncludeLaunchDescription' imported but unused\n"}
+[0.450068] (ropisim) StdoutLine: {'line': b'1: 2     W292 no newline at end of file\n'}
+[0.450090] (ropisim) StdoutLine: {'line': b'1: 7     W293 blank line contains whitespace\n'}
+[0.450112] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450133] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:7:1: F401 'launch.actions.IncludeLaunchDescription' imported but unused\n"}
+[0.450155] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450177] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:7:1: F401 'launch.actions.ExecuteProcess' imported but unused\n"}
+[0.450200] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450222] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:7:52: E231 missing whitespace after ','\n"}
+[0.450243] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450265] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:7:67: E231 missing whitespace after ','\n"}
+[0.450286] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450308] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:9:1: E302 expected 2 blank lines, found 0\n'}
+[0.450329] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450351] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:20:5: E303 too many blank lines (2)\n'}
+[0.450373] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450394] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:22:1: W293 blank line contains whitespace\n'}
+[0.450415] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450437] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:24:41: E128 continuation line under-indented for visual indent\n'}
+[0.450463] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450484] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:25:100: E501 line too long (100 > 99 characters)\n'}
+[0.450506] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450528] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:26:41: E128 continuation line under-indented for visual indent\n'}
+[0.450549] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450571] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:27:100: E501 line too long (116 > 99 characters)\n'}
+[0.450593] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450614] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:28:45: E128 continuation line under-indented for visual indent\n'}
+[0.450635] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450657] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:31:5: E303 too many blank lines (2)\n'}
+[0.450679] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450701] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:48:1: W293 blank line contains whitespace\n'}
+[0.450722] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450744] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:58:9: E303 too many blank lines (2)\n'}
+[0.450767] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450791] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:58:9: E116 unexpected indentation (comment)\n'}
+[0.450814] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450836] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:68:5: E303 too many blank lines (4)\n'}
+[0.450857] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450879] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:76:100: E501 line too long (104 > 99 characters)\n'}
+[0.450901] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450923] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:84:5: E303 too many blank lines (2)\n'}
+[0.450946] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.450967] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:88:9: E128 continuation line under-indented for visual indent\n'}
+[0.450989] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451011] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:89:9: E128 continuation line under-indented for visual indent\n'}
+[0.451033] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451055] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:90:9: E128 continuation line under-indented for visual indent\n'}
+[0.451076] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451098] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:98:9: E128 continuation line under-indented for visual indent\n'}
+[0.451124] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451146] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:99:9: E128 continuation line under-indented for visual indent\n'}
+[0.451168] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451198] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:100:9: E128 continuation line under-indented for visual indent\n'}
+[0.451221] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451244] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:104:18: E222 multiple spaces after operator\n'}
+[0.451267] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451289] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:104:100: E501 line too long (171 > 99 characters)\n'}
+[0.451311] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451333] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:108:1: W293 blank line contains whitespace\n'}
+[0.451355] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451376] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:110:5: E303 too many blank lines (5)\n'}
+[0.451398] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451419] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:110:5: E265 block comment should start with '# '\n"}
+[0.451441] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451462] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:113:5: E265 block comment should start with '# '\n"}
+[0.451484] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451506] (ropisim) StdoutLine: {'line': b"1: ./launch/display_gazebo.launch.py:119:5: E265 block comment should start with '# '\n"}
+[0.451528] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451550] (ropisim) StdoutLine: {'line': b'1: ./launch/display_gazebo.launch.py:129:14: W292 no newline at end of file\n'}
+[0.451571] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451593] (ropisim) StdoutLine: {'line': b"1: ./launch/gazebo_nav.launch.py:1:1: F401 'os' imported but unused\n"}
+[0.451614] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451636] (ropisim) StdoutLine: {'line': b"1: ./launch/gazebo_nav.launch.py:4:1: F401 'launch.substitutions.Command' imported but unused\n"}
+[0.451658] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451679] (ropisim) StdoutLine: {'line': b"1: ./launch/gazebo_nav.launch.py:4:1: F401 'launch.substitutions.LaunchConfiguration' imported but unused\n"}
+[0.451700] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451722] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:14:1: W293 blank line contains whitespace\n'}
+[0.451744] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451765] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:17:5: E303 too many blank lines (3)\n'}
+[0.451788] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451810] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:36:1: W293 blank line contains whitespace\n'}
+[0.451831] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451853] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:42:1: W293 blank line contains whitespace\n'}
+[0.451876] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451897] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:44:5: E303 too many blank lines (2)\n'}
+[0.451919] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451941] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:66:1: W293 blank line contains whitespace\n'}
+[0.451963] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.451985] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:68:5: E303 too many blank lines (2)\n'}
+[0.452007] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452028] (ropisim) StdoutLine: {'line': b"1: ./launch/gazebo_nav.launch.py:68:5: E265 block comment should start with '# '\n"}
+[0.452050] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452072] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:72:5: E303 too many blank lines (2)\n'}
+[0.452093] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452115] (ropisim) StdoutLine: {'line': b"1: ./launch/gazebo_nav.launch.py:72:5: E265 block comment should start with '# '\n"}
+[0.452136] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452158] (ropisim) StdoutLine: {'line': b'1: ./launch/gazebo_nav.launch.py:79:14: W292 no newline at end of file\n'}
+[0.452179] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452201] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452223] (ropisim) StdoutLine: {'line': b'1: 2 files checked\n'}
+[0.452245] (ropisim) StdoutLine: {'line': b'1: 47 errors\n'}
+[0.452268] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452290] (ropisim) StdoutLine: {'line': b"1: 'E'-type errors: 33\n"}
+[0.452312] (ropisim) StdoutLine: {'line': b"1: 'F'-type errors: 5\n"}
+[0.452335] (ropisim) StdoutLine: {'line': b"1: 'W'-type errors: 9\n"}
+[0.452357] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452379] (ropisim) StdoutLine: {'line': b'1: Checked files:\n'}
+[0.452401] (ropisim) StdoutLine: {'line': b'1: \n'}
+[0.452423] (ropisim) StdoutLine: {'line': b'1: * ./launch/display_gazebo.launch.py\n'}
+[0.452444] (ropisim) StdoutLine: {'line': b'1: * ./launch/gazebo_nav.launch.py\n'}
+[0.452470] (ros2_aruco_interfaces) StdoutLine: {'line': b'2/3 Test #2: lint_cmake .......................***Failed    0.07 sec\n'}
+[0.452495] (ros2_aruco_interfaces) StdoutLine: {'line': b'test 3\n'}
+[0.452517] (ros2_aruco_interfaces) StdoutLine: {'line': b'    Start 3: xmllint\n'}
+[0.452538] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.452560] (ros2_aruco_interfaces) StdoutLine: {'line': b'3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml"\n'}
+[0.452587] (ros2_aruco_interfaces) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.457887] (ros2_aruco) StdoutLine: {'line': b'\x1b[1mcollecting ... \x1b[0m\x1b[1m\n'}
+[0.457938] (ros2_aruco) StdoutLine: {'line': b'collected 3 items                                                              \x1b[0m\n'}
+[0.458023] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.461312] (ropisim) StdoutLine: {'line': b'1: -- run_test.py: return code 1\n'}
+[0.461392] (ropisim) StdoutLine: {'line': b"1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/flake8.xunit.xml'\n"}
+[0.466015] (ropislam) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropislam':\n"}
+[0.466171] (ropislam) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml\n'}
+[0.466226] (ropinav) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropinav':\n"}
+[0.466273] (ropinav) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/lint_cmake.xunit.xml\n'}
+[0.466886] (ropisim) StdoutLine: {'line': b'1/4 Test #1: flake8 ...........................***Failed    0.17 sec\n'}
+[0.466966] (ropisim) StdoutLine: {'line': b'test 2\n'}
+[0.467002] (ropisim) StdoutLine: {'line': b'    Start 2: lint_cmake\n'}
+[0.467031] (ropisim) StdoutLine: {'line': b'\n'}
+[0.467058] (ropisim) StdoutLine: {'line': b'2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml"\n'}
+[0.467088] (ropisim) StdoutLine: {'line': b'2: Test timeout computed to be: 60\n'}
+[0.478035] (ros2_aruco_interfaces) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':\n"}
+[0.478131] (ros2_aruco_interfaces) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml\n'}
+[0.494952] (ropisim) StdoutLine: {'line': b"2: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':\n"}
+[0.495085] (ropisim) StdoutLine: {'line': b'2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml\n'}
+[0.496846] (ropislam) StdoutLine: {'line': b'2: \n'}
+[0.496918] (ropislam) StdoutLine: {'line': b'2: No problems found\n'}
+[0.496953] (ropinav) StdoutLine: {'line': b'2: \n'}
+[0.496987] (ropinav) StdoutLine: {'line': b'2: No problems found\n'}
+[0.500180] (-) TimerEvent: {}
+[0.502202] (ropinav) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.502271] (ropislam) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.502330] (ropinav) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/lint_cmake.xunit.xml'\n"}
+[0.502369] (ropislam) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml'\n"}
+[0.508217] (ropinav) StdoutLine: {'line': b'2/4 Test #2: lint_cmake .......................   Passed    0.07 sec\n'}
+[0.508331] (ropislam) StdoutLine: {'line': b'2/4 Test #2: lint_cmake .......................   Passed    0.07 sec\n'}
+[0.508385] (ropinav) StdoutLine: {'line': b'test 3\n'}
+[0.508413] (ropislam) StdoutLine: {'line': b'test 3\n'}
+[0.508439] (ropislam) StdoutLine: {'line': b'    Start 3: pep257\n'}
+[0.508466] (ropinav) StdoutLine: {'line': b'    Start 3: pep257\n'}
+[0.508490] (ropinav) StdoutLine: {'line': b'\n'}
+[0.508514] (ropinav) StdoutLine: {'line': b'3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/pep257.xunit.xml" "--package-name" "ropinav" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/pep257.xunit.xml"\n'}
+[0.508543] (ropinav) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.508566] (ropislam) StdoutLine: {'line': b'\n'}
+[0.508588] (ropislam) StdoutLine: {'line': b'3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/pep257.xunit.xml" "--package-name" "ropislam" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/pep257.xunit.xml"\n'}
+[0.508615] (ropislam) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.525976] (ros2_aruco) StdoutLine: {'line': b'test/test_copyright.py \x1b[31mF\x1b[0m\x1b[31m                                                 [ 33%]\x1b[0m\n'}
+[0.526491] (ropisim) StdoutLine: {'line': b'2: \n'}
+[0.526554] (ropisim) StdoutLine: {'line': b'2: No problems found\n'}
+[0.531580] (ropisim) StdoutLine: {'line': b'2: -- run_test.py: return code 0\n'}
+[0.531654] (ropisim) StdoutLine: {'line': b"2: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/lint_cmake.xunit.xml'\n"}
+[0.536252] (ropislam) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropislam':\n"}
+[0.536331] (ropislam) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/pep257.xunit.xml\n'}
+[0.536365] (ropinav) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropinav':\n"}
+[0.536399] (ropinav) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/pep257.xunit.xml\n'}
+[0.537498] (ropisim) StdoutLine: {'line': b'2/4 Test #2: lint_cmake .......................   Passed    0.07 sec\n'}
+[0.537574] (ropisim) StdoutLine: {'line': b'test 3\n'}
+[0.537607] (ropisim) StdoutLine: {'line': b'    Start 3: pep257\n'}
+[0.537634] (ropisim) StdoutLine: {'line': b'\n'}
+[0.537659] (ropisim) StdoutLine: {'line': b'3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_pep257/pep257.txt" "--command" "/opt/ros/humble/bin/ament_pep257" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml"\n'}
+[0.537696] (ropisim) StdoutLine: {'line': b'3: Test timeout computed to be: 60\n'}
+[0.566929] (ropisim) StdoutLine: {'line': b"3: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':\n"}
+[0.567219] (ropisim) StdoutLine: {'line': b'3:  - /opt/ros/humble/bin/ament_pep257 --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml\n'}
+[0.585296] (ros2_aruco_interfaces) StdoutLine: {'line': b"3: File 'package.xml' is valid\n"}
+[0.585451] (ros2_aruco_interfaces) StdoutLine: {'line': b'3: \n'}
+[0.585486] (ros2_aruco_interfaces) StdoutLine: {'line': b'3: No problems found\n'}
+[0.590599] (ropislam) StdoutLine: {'line': b'3: checking ./launch/slam.launch.py\n'}
+[0.590714] (ropislam) StdoutLine: {'line': b'3: No problems found\n'}
+[0.591322] (ros2_aruco_interfaces) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.591373] (ros2_aruco_interfaces) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml'\n"}
+[0.591749] (ropinav) StdoutLine: {'line': b'3: checking ./launch/navigation_launch.py\n'}
+[0.591791] (ropinav) StdoutLine: {'line': b'3: No problems found\n'}
+[0.598021] (ros2_aruco_interfaces) StdoutLine: {'line': b'3/3 Test #3: xmllint ..........................   Passed    0.15 sec\n'}
+[0.598220] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.598257] (ros2_aruco_interfaces) StdoutLine: {'line': b'67% tests passed\x1b[0;0m, \x1b[0;31m1 tests failed\x1b[0;0m out of 3\n'}
+[0.598285] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.598309] (ros2_aruco_interfaces) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.598333] (ros2_aruco_interfaces) StdoutLine: {'line': b'copyright     =   0.08 sec*proc (1 test)\n'}
+[0.598357] (ros2_aruco_interfaces) StdoutLine: {'line': b'lint_cmake    =   0.07 sec*proc (1 test)\n'}
+[0.598380] (ros2_aruco_interfaces) StdoutLine: {'line': b'linter        =   0.30 sec*proc (3 tests)\n'}
+[0.598404] (ros2_aruco_interfaces) StdoutLine: {'line': b'xmllint       =   0.15 sec*proc (1 test)\n'}
+[0.598427] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.598450] (ros2_aruco_interfaces) StdoutLine: {'line': b'Total Test time (real) =   0.30 sec\n'}
+[0.598473] (ros2_aruco_interfaces) StdoutLine: {'line': b'\n'}
+[0.598495] (ros2_aruco_interfaces) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.598518] (ros2_aruco_interfaces) StdoutLine: {'line': b'\t\x1b[0;31m  2 - lint_cmake (Failed)\x1b[0;0m\n'}
+[0.600253] (-) TimerEvent: {}
+[0.602171] (ros2_aruco) StdoutLine: {'line': b'test/test_flake8.py \x1b[31mF\x1b[0m\x1b[31m                                                    [ 66%]\x1b[0m\n'}
+[0.602325] (ropislam) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.602439] (ropislam) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/pep257.xunit.xml'\n"}
+[0.602985] (ros2_aruco_interfaces) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.603047] (ros2_aruco_interfaces) StderrLine: {'line': b'Output from these tests are in: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/Testing/Temporary/LastTest.log\n'}
+[0.603087] (ros2_aruco_interfaces) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[0.603876] (ropinav) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.604050] (ropinav) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/pep257.xunit.xml'\n"}
+[0.604408] (ros2_aruco_interfaces) CommandEnded: {'returncode': 8}
+[0.604677] (ros2_aruco_interfaces) TestFailure: {'identifier': 'ros2_aruco_interfaces'}
+[0.604696] (ros2_aruco_interfaces) JobEnded: {'identifier': 'ros2_aruco_interfaces', 'rc': 0}
+[0.607906] (ropislam) StdoutLine: {'line': b'3/4 Test #3: pep257 ...........................   Passed    0.10 sec\n'}
+[0.608017] (ropislam) StdoutLine: {'line': b'test 4\n'}
+[0.608051] (ropislam) StdoutLine: {'line': b'    Start 4: xmllint\n'}
+[0.608079] (ropislam) StdoutLine: {'line': b'\n'}
+[0.608105] (ropislam) StdoutLine: {'line': b'4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/xmllint.xunit.xml" "--package-name" "ropislam" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/xmllint.xunit.xml"\n'}
+[0.608138] (ropislam) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.609250] (ropinav) StdoutLine: {'line': b'3/4 Test #3: pep257 ...........................   Passed    0.10 sec\n'}
+[0.609326] (ropinav) StdoutLine: {'line': b'test 4\n'}
+[0.609351] (ropinav) StdoutLine: {'line': b'    Start 4: xmllint\n'}
+[0.609375] (ropinav) StdoutLine: {'line': b'\n'}
+[0.609400] (ropinav) StdoutLine: {'line': b'4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/xmllint.xunit.xml" "--package-name" "ropinav" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/xmllint.xunit.xml"\n'}
+[0.609427] (ropinav) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.620057] (ros2_aruco) StdoutLine: {'line': b'test/test_pep257.py \x1b[31mF\x1b[0m\x1b[31m                                                    [100%]\x1b[0m\n'}
+[0.620164] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.620204] (ros2_aruco) StdoutLine: {'line': b'=================================== FAILURES ===================================\n'}
+[0.620244] (ros2_aruco) StdoutLine: {'line': b'\x1b[31m\x1b[1m________________________________ test_copyright ________________________________\x1b[0m\n'}
+[0.620279] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_copyright.py\x1b[0m:23: in test_copyright\n'}
+[0.629455] (ropisim) StdoutLine: {'line': b'3: checking ./launch/display_gazebo.launch.py\n'}
+[0.629539] (ropisim) StdoutLine: {'line': b'3: checking ./launch/gazebo_nav.launch.py\n'}
+[0.629585] (ropisim) StdoutLine: {'line': b'3: No problems found\n'}
+[0.635946] (ropislam) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropislam':\n"}
+[0.635987] (ropislam) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/xmllint.xunit.xml\n'}
+[0.636565] (ropinav) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropinav':\n"}
+[0.636603] (ropinav) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/xmllint.xunit.xml\n'}
+[0.638400] (ropisim) StdoutLine: {'line': b'3: -- run_test.py: return code 0\n'}
+[0.638472] (ropisim) StdoutLine: {'line': b"3: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/pep257.xunit.xml'\n"}
+[0.639605] (ros2_aruco) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound errors\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[0.639668] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[0.639693] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.639721] (ros2_aruco) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.639750] (ros2_aruco) StdoutLine: {'line': b'launch/aruco_recognition.launch.py: could not find copyright notice\n'}
+[0.639778] (ros2_aruco) StdoutLine: {'line': b'ros2_aruco/aruco_generate_marker.py: could not find copyright notice\n'}
+[0.639807] (ros2_aruco) StdoutLine: {'line': b'ros2_aruco/aruco_node.py: could not find copyright notice\n'}
+[0.639834] (ros2_aruco) StdoutLine: {'line': b'3 errors, checked 7 files\n'}
+[0.639865] (ros2_aruco) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_flake8 __________________________________\x1b[0m\n'}
+[0.639892] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_flake8.py\x1b[0m:23: in test_flake8\n'}
+[0.639944] (ros2_aruco) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound errors\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[0.640124] (ros2_aruco) StderrLine: {'line': b'\x1b[33m=============================== warnings summary ===============================\x1b[0m\n'}
+[0.640165] (ros2_aruco) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.640190] (ros2_aruco) StderrLine: {'line': b'test/test_flake8.py::test_flake8\n'}
+[0.640213] (ros2_aruco) StderrLine: {'line': b'  Warning: SelectableGroups dict interface is deprecated. Use select.\n'}
+[0.640239] (ros2_aruco) StderrLine: {'line': b'\n'}
+[0.640264] (ros2_aruco) StderrLine: {'line': b'-- Docs: https://docs.pytest.org/en/stable/warnings.html\n'}
+[0.640288] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found errors\x1b[0m\n'}
+[0.640315] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.640339] (ros2_aruco) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.640363] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640386] (ros2_aruco) StdoutLine: {'line': b'./launch/aruco_recognition.launch.py:6:1: E302 expected 2 blank lines, found 1\n'}
+[0.640410] (ros2_aruco) StdoutLine: {'line': b'def generate_launch_description():\n'}
+[0.640433] (ros2_aruco) StdoutLine: {'line': b'^\n'}
+[0.640456] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640482] (ros2_aruco) StdoutLine: {'line': b'./ros2_aruco/aruco_generate_marker.py:15:1: D204 1 blank line required after class docstring\n'}
+[0.640506] (ros2_aruco) StdoutLine: {'line': b'    """ Trick to allow both defaults and nice formatting in the help. """\n'}
+[0.640530] (ros2_aruco) StdoutLine: {'line': b'^\n'}
+[0.640553] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640576] (ros2_aruco) StdoutLine: {'line': b'./ros2_aruco/aruco_generate_marker.py:15:1: D210 No whitespaces allowed surrounding docstring text\n'}
+[0.640600] (ros2_aruco) StdoutLine: {'line': b'    """ Trick to allow both defaults and nice formatting in the help. """\n'}
+[0.640622] (ros2_aruco) StdoutLine: {'line': b'^\n'}
+[0.640644] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640667] (ros2_aruco) StdoutLine: {'line': b"./ros2_aruco/aruco_node.py:121:36: E721 do not compare types, use 'isinstance()'\n"}
+[0.640690] (ros2_aruco) StdoutLine: {'line': b'            if type(dictionary_id) != type(cv2.aruco.DICT_5X5_100):\n'}
+[0.640713] (ros2_aruco) StdoutLine: {'line': b'                                   ^\n'}
+[0.640737] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640760] (ros2_aruco) StdoutLine: {'line': b'1     D204 1 blank line required after class docstring\n'}
+[0.640783] (ros2_aruco) StdoutLine: {'line': b'1     D210 No whitespaces allowed surrounding docstring text\n'}
+[0.640806] (ros2_aruco) StdoutLine: {'line': b'1     E302 expected 2 blank lines, found 1\n'}
+[0.640828] (ros2_aruco) StdoutLine: {'line': b"1     E721 do not compare types, use 'isinstance()'\n"}
+[0.640854] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640877] (ros2_aruco) StdoutLine: {'line': b'8 files checked\n'}
+[0.640899] (ros2_aruco) StdoutLine: {'line': b'4 errors\n'}
+[0.640922] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.640943] (ros2_aruco) StdoutLine: {'line': b"'D'-type errors: 2\n"}
+[0.640965] (ros2_aruco) StdoutLine: {'line': b"'E'-type errors: 2\n"}
+[0.640988] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.641011] (ros2_aruco) StdoutLine: {'line': b'Checked files:\n'}
+[0.641034] (ros2_aruco) StdoutLine: {'line': b'\n'}
+[0.641056] (ros2_aruco) StdoutLine: {'line': b'* ./setup.py\n'}
+[0.641078] (ros2_aruco) StdoutLine: {'line': b'* ./launch/aruco_recognition.launch.py\n'}
+[0.641102] (ros2_aruco) StdoutLine: {'line': b'* ./test/test_pep257.py\n'}
+[0.641126] (ros2_aruco) StdoutLine: {'line': b'* ./test/test_flake8.py\n'}
+[0.641150] (ros2_aruco) StdoutLine: {'line': b'* ./test/test_copyright.py\n'}
+[0.641172] (ros2_aruco) StdoutLine: {'line': b'* ./ros2_aruco/aruco_generate_marker.py\n'}
+[0.641194] (ros2_aruco) StdoutLine: {'line': b'* ./ros2_aruco/__init__.py\n'}
+[0.641217] (ros2_aruco) StdoutLine: {'line': b'* ./ros2_aruco/aruco_node.py\n'}
+[0.641238] (ros2_aruco) StdoutLine: {'line': b'----------------------------- Captured stderr call -----------------------------\n'}
+[0.641261] (ros2_aruco) StdoutLine: {'line': b'option --max-complexity: please update from optparse string `type=` to argparse callable `type=` -- this will be an error in the future\n'}
+[0.641283] (ros2_aruco) StdoutLine: {'line': b'\x1b[31m\x1b[1m_________________________________ test_pep257 __________________________________\x1b[0m\n'}
+[0.641305] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mtest/test_pep257.py\x1b[0m:23: in test_pep257\n'}
+[0.641327] (ros2_aruco) StdoutLine: {'line': b"    \x1b[94massert\x1b[39;49;00m rc == \x1b[94m0\x1b[39;49;00m, \x1b[33m'\x1b[39;49;00m\x1b[33mFound code style errors / warnings\x1b[39;49;00m\x1b[33m'\x1b[39;49;00m\n"}
+[0.641350] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   AssertionError: Found code style errors / warnings\x1b[0m\n'}
+[0.641374] (ros2_aruco) StdoutLine: {'line': b'\x1b[1m\x1b[31mE   assert 1 == 0\x1b[0m\n'}
+[0.641396] (ros2_aruco) StdoutLine: {'line': b'----------------------------- Captured stdout call -----------------------------\n'}
+[0.641419] (ros2_aruco) StdoutLine: {'line': b'checking ./launch/aruco_recognition.launch.py\n'}
+[0.641444] (ros2_aruco) StdoutLine: {'line': b'checking ./ros2_aruco/__init__.py\n'}
+[0.641469] (ros2_aruco) StdoutLine: {'line': b'checking ./ros2_aruco/aruco_generate_marker.py\n'}
+[0.641495] (ros2_aruco) StdoutLine: {'line': b'./ros2_aruco/aruco_generate_marker.py:15 in public class `CustomFormatter`: D204: 1 blank line required after class docstring (found 0)\n'}
+[0.641518] (ros2_aruco) StdoutLine: {'line': b'./ros2_aruco/aruco_generate_marker.py:15 in public class `CustomFormatter`: D210: No whitespaces allowed surrounding docstring text\n'}
+[0.641541] (ros2_aruco) StdoutLine: {'line': b'checking ./ros2_aruco/aruco_node.py\n'}
+[0.641563] (ros2_aruco) StdoutLine: {'line': b"./ros2_aruco/aruco_node.py:1 at module level: D407: Missing dashed underline after section ('Parameters')\n"}
+[0.641586] (ros2_aruco) StdoutLine: {'line': b"./ros2_aruco/aruco_node.py:1 at module level: D406: Section name should end with a newline ('Parameters', not 'Parameters:')\n"}
+[0.641608] (ros2_aruco) StdoutLine: {'line': b'checking ./setup.py\n'}
+[0.641630] (ros2_aruco) StdoutLine: {'line': b'checking ./test/test_copyright.py\n'}
+[0.641652] (ros2_aruco) StdoutLine: {'line': b'checking ./test/test_flake8.py\n'}
+[0.641676] (ros2_aruco) StdoutLine: {'line': b'checking ./test/test_pep257.py\n'}
+[0.641698] (ros2_aruco) StdoutLine: {'line': b'checking test/test_copyright.py\n'}
+[0.641719] (ros2_aruco) StdoutLine: {'line': b'checking test/test_flake8.py\n'}
+[0.641742] (ros2_aruco) StdoutLine: {'line': b'checking test/test_pep257.py\n'}
+[0.641764] (ros2_aruco) StdoutLine: {'line': b'4 errors\n'}
+[0.641786] (ros2_aruco) StdoutLine: {'line': b'- generated xml file: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco/pytest.xml -\n'}
+[0.641808] (ros2_aruco) StdoutLine: {'line': b'=========================== short test summary info ============================\n'}
+[0.641834] (ros2_aruco) StdoutLine: {'line': b'FAILED test/test_copyright.py::test_copyright - AssertionError: Found errors\n'}
+[0.641856] (ros2_aruco) StdoutLine: {'line': b'FAILED test/test_flake8.py::test_flake8 - AssertionError: Found errors\n'}
+[0.641878] (ros2_aruco) StdoutLine: {'line': b'FAILED test/test_pep257.py::test_pep257 - AssertionError: Found code style er...\n'}
+[0.641900] (ros2_aruco) StdoutLine: {'line': b'\x1b[31m======================== \x1b[31m\x1b[1m3 failed\x1b[0m, \x1b[33m2 warnings\x1b[0m\x1b[31m in 0.22s\x1b[0m\x1b[31m =========================\x1b[0m\n'}
+[0.643577] (ropisim) StdoutLine: {'line': b'3/4 Test #3: pep257 ...........................   Passed    0.11 sec\n'}
+[0.643665] (ropisim) StdoutLine: {'line': b'test 4\n'}
+[0.643692] (ropisim) StdoutLine: {'line': b'    Start 4: xmllint\n'}
+[0.643715] (ropisim) StdoutLine: {'line': b'\n'}
+[0.643738] (ropisim) StdoutLine: {'line': b'4: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml" "--package-name" "ropisim" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml"\n'}
+[0.643765] (ropisim) StdoutLine: {'line': b'4: Test timeout computed to be: 60\n'}
+[0.671297] (ropisim) StdoutLine: {'line': b"4: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropisim':\n"}
+[0.671414] (ropisim) StdoutLine: {'line': b'4:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml\n'}
+[0.673676] (ros2_aruco) CommandEnded: {'returncode': 1}
+[0.673952] (ros2_aruco) TestFailure: {'identifier': 'ros2_aruco'}
+[0.673965] (ros2_aruco) JobEnded: {'identifier': 'ros2_aruco', 'rc': 0}
+[0.700347] (-) TimerEvent: {}
+[0.736929] (ropislam) StdoutLine: {'line': b"4: File 'package.xml' is valid\n"}
+[0.737073] (ropislam) StdoutLine: {'line': b'4: \n'}
+[0.737125] (ropislam) StdoutLine: {'line': b'4: No problems found\n'}
+[0.742637] (ropislam) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[0.742796] (ropislam) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/xmllint.xunit.xml'\n"}
+[0.747679] (ropislam) StdoutLine: {'line': b'4/4 Test #4: xmllint ..........................   Passed    0.14 sec\n'}
+[0.747992] (ropislam) StdoutLine: {'line': b'\n'}
+[0.748164] (ropislam) StdoutLine: {'line': b'75% tests passed\x1b[0;0m, \x1b[0;31m1 tests failed\x1b[0;0m out of 4\n'}
+[0.748246] (ropislam) StdoutLine: {'line': b'\n'}
+[0.748313] (ropislam) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.748372] (ropislam) StdoutLine: {'line': b'flake8        =   0.14 sec*proc (1 test)\n'}
+[0.748432] (ropislam) StdoutLine: {'line': b'lint_cmake    =   0.07 sec*proc (1 test)\n'}
+[0.748496] (ropislam) StdoutLine: {'line': b'linter        =   0.45 sec*proc (4 tests)\n'}
+[0.748550] (ropislam) StdoutLine: {'line': b'pep257        =   0.10 sec*proc (1 test)\n'}
+[0.748604] (ropislam) StdoutLine: {'line': b'xmllint       =   0.14 sec*proc (1 test)\n'}
+[0.748659] (ropislam) StdoutLine: {'line': b'\n'}
+[0.748715] (ropislam) StdoutLine: {'line': b'Total Test time (real) =   0.45 sec\n'}
+[0.748772] (ropislam) StdoutLine: {'line': b'\n'}
+[0.748827] (ropislam) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.748881] (ropislam) StdoutLine: {'line': b'\t\x1b[0;31m  1 - flake8 (Failed)\x1b[0;0m\n'}
+[0.756627] (ropislam) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.756777] (ropislam) StderrLine: {'line': b'Output from these tests are in: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/Testing/Temporary/LastTest.log\n'}
+[0.756858] (ropislam) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[0.758389] (ropislam) CommandEnded: {'returncode': 8}
+[0.758795] (ropislam) TestFailure: {'identifier': 'ropislam'}
+[0.758825] (ropislam) JobEnded: {'identifier': 'ropislam', 'rc': 0}
+[0.777309] (ropisim) StdoutLine: {'line': b"4: File 'package.xml' is valid\n"}
+[0.777462] (ropisim) StdoutLine: {'line': b'4: \n'}
+[0.777541] (ropisim) StdoutLine: {'line': b'4: No problems found\n'}
+[0.783331] (ropisim) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[0.783475] (ropisim) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/test_results/ropisim/xmllint.xunit.xml'\n"}
+[0.788668] (ropisim) StdoutLine: {'line': b'4/4 Test #4: xmllint ..........................   Passed    0.14 sec\n'}
+[0.788842] (ropisim) StdoutLine: {'line': b'\n'}
+[0.788982] (ropisim) StdoutLine: {'line': b'75% tests passed\x1b[0;0m, \x1b[0;31m1 tests failed\x1b[0;0m out of 4\n'}
+[0.789053] (ropisim) StdoutLine: {'line': b'\n'}
+[0.789115] (ropisim) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.789177] (ropisim) StdoutLine: {'line': b'flake8        =   0.17 sec*proc (1 test)\n'}
+[0.789238] (ropisim) StdoutLine: {'line': b'lint_cmake    =   0.07 sec*proc (1 test)\n'}
+[0.789296] (ropisim) StdoutLine: {'line': b'linter        =   0.49 sec*proc (4 tests)\n'}
+[0.789351] (ropisim) StdoutLine: {'line': b'pep257        =   0.11 sec*proc (1 test)\n'}
+[0.789405] (ropisim) StdoutLine: {'line': b'xmllint       =   0.14 sec*proc (1 test)\n'}
+[0.789458] (ropisim) StdoutLine: {'line': b'\n'}
+[0.789512] (ropisim) StdoutLine: {'line': b'Total Test time (real) =   0.50 sec\n'}
+[0.789566] (ropisim) StdoutLine: {'line': b'\n'}
+[0.789622] (ropisim) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.789679] (ropisim) StdoutLine: {'line': b'\t\x1b[0;31m  1 - flake8 (Failed)\x1b[0;0m\n'}
+[0.797172] (ropisim) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.797319] (ropisim) StderrLine: {'line': b'Output from these tests are in: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropisim/Testing/Temporary/LastTest.log\n'}
+[0.797399] (ropisim) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[0.798630] (ropisim) CommandEnded: {'returncode': 8}
+[0.799063] (ropisim) TestFailure: {'identifier': 'ropisim'}
+[0.799094] (ropisim) JobEnded: {'identifier': 'ropisim', 'rc': 0}
+[0.800433] (-) TimerEvent: {}
+[0.826376] (ropinav) StdoutLine: {'line': b"4: File 'package.xml' is valid\n"}
+[0.826535] (ropinav) StdoutLine: {'line': b'4: \n'}
+[0.826612] (ropinav) StdoutLine: {'line': b'4: No problems found\n'}
+[0.832028] (ropinav) StdoutLine: {'line': b'4: -- run_test.py: return code 0\n'}
+[0.832210] (ropinav) StdoutLine: {'line': b"4: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/test_results/ropinav/xmllint.xunit.xml'\n"}
+[0.836868] (ropinav) StdoutLine: {'line': b'4/4 Test #4: xmllint ..........................   Passed    0.23 sec\n'}
+[0.837095] (ropinav) StdoutLine: {'line': b'\n'}
+[0.837209] (ropinav) StdoutLine: {'line': b'75% tests passed\x1b[0;0m, \x1b[0;31m1 tests failed\x1b[0;0m out of 4\n'}
+[0.837313] (ropinav) StdoutLine: {'line': b'\n'}
+[0.837405] (ropinav) StdoutLine: {'line': b'Label Time Summary:\n'}
+[0.837489] (ropinav) StdoutLine: {'line': b'flake8        =   0.15 sec*proc (1 test)\n'}
+[0.837577] (ropinav) StdoutLine: {'line': b'lint_cmake    =   0.07 sec*proc (1 test)\n'}
+[0.837661] (ropinav) StdoutLine: {'line': b'linter        =   0.54 sec*proc (4 tests)\n'}
+[0.837755] (ropinav) StdoutLine: {'line': b'pep257        =   0.10 sec*proc (1 test)\n'}
+[0.837844] (ropinav) StdoutLine: {'line': b'xmllint       =   0.23 sec*proc (1 test)\n'}
+[0.837927] (ropinav) StdoutLine: {'line': b'\n'}
+[0.838012] (ropinav) StdoutLine: {'line': b'Total Test time (real) =   0.55 sec\n'}
+[0.838095] (ropinav) StdoutLine: {'line': b'\n'}
+[0.838180] (ropinav) StdoutLine: {'line': b'The following tests FAILED:\n'}
+[0.838269] (ropinav) StdoutLine: {'line': b'\t\x1b[0;31m  1 - flake8 (Failed)\x1b[0;0m\n'}
+[0.840141] (ropinav) StderrLine: {'line': b'Errors while running CTest\n'}
+[0.840310] (ropinav) StderrLine: {'line': b'Output from these tests are in: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/Testing/Temporary/LastTest.log\n'}
+[0.840416] (ropinav) StderrLine: {'line': b'Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.\n'}
+[0.841272] (ropinav) CommandEnded: {'returncode': 8}
+[0.841943] (ropinav) TestFailure: {'identifier': 'ropinav'}
+[0.842119] (ropinav) JobEnded: {'identifier': 'ropinav', 'rc': 0}
+[0.842726] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+source;share/ropiapp/local_setup.bash
+source;share/ropiapp/local_setup.dsv
+source;share/ropiapp/local_setup.sh
+source;share/ropiapp/local_setup.zsh

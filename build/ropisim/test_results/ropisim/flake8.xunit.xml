@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="ropisim.flake8"
+  tests="47"
+  errors="0"
+  failures="47"
+  time="0.079"
+>
+  <testcase
+    name="F401 (./launch/display_gazebo.launch.py:7:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="'launch.actions.IncludeLaunchDescription' imported but unused:&#10;from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/display_gazebo.launch.py:7:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="'launch.actions.ExecuteProcess' imported but unused:&#10;from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/display_gazebo.launch.py:7:52)"
+    classname="ropisim.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler&#10;"/>
+  </testcase>
+  <testcase
+    name="E231 (./launch/display_gazebo.launch.py:7:67)"
+    classname="ropisim.flake8"
+  >
+      <failure message="missing whitespace after ',':&#10;from launch.actions import IncludeLaunchDescription,ExecuteProcess,RegisterEventHandler&#10;"/>
+  </testcase>
+  <testcase
+    name="E302 (./launch/display_gazebo.launch.py:9:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="expected 2 blank lines, found 0:&#10;def generate_launch_description():&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:20:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # Define launch file arguments&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/display_gazebo.launch.py:22:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:24:41)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                                        description='Flag to enable joint_state_publisher_gui')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/display_gazebo.launch.py:25:100)"
+    classname="ropisim.flake8"
+  >
+      <failure message="line too long (100 &gt; 99 characters):&#10;    arg_model = launch.actions.DeclareLaunchArgument(name='model', default_value=default_model_path,&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:26:41)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                                        description='Absolute path to robot urdf file')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/display_gazebo.launch.py:27:100)"
+    classname="ropisim.flake8"
+  >
+      <failure message="line too long (116 &gt; 99 characters):&#10;    arg_rvizconfig = launch.actions.DeclareLaunchArgument(name='rvizconfig', default_value=default_rviz_config_path,&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:28:45)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                                            description='Absolute path to rviz config file')&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:31:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    robot_state_publisher_node = launch_ros.actions.Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/display_gazebo.launch.py:48:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:58:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;        # Joint State Broadcaster Node&#10;"/>
+  </testcase>
+  <testcase
+    name="E116 (./launch/display_gazebo.launch.py:58:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="unexpected indentation (comment):&#10;        # Joint State Broadcaster Node&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:68:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (4):&#10;    # Joint Position Controller Node&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/display_gazebo.launch.py:76:100)"
+    classname="ropisim.flake8"
+  >
+      <failure message="line too long (104 &gt; 99 characters):&#10;    delay_robot_postion_controller_spawner_after_joint_state_broadcaster_spawner = RegisterEventHandler(&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:84:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    spawn_entity = launch_ros.actions.Node(&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:88:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:89:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        '-x', '0', '-y', '0', '-z', '0',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:90:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        '-R', '0', '-P', '0', '-Y', '1.722056'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:98:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        # '-x', '-5.204683', '-y', '-18.104129', '-z', '0.004496',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:99:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        '-x', '0.0', '-y', '3.0', '-z', '0',&#10;"/>
+  </testcase>
+  <testcase
+    name="E128 (./launch/display_gazebo.launch.py:100:9)"
+    classname="ropisim.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;        '-R', '0', '-P', '0', '-Y', '1.722056'],&#10;"/>
+  </testcase>
+  <testcase
+    name="E222 (./launch/display_gazebo.launch.py:104:18)"
+    classname="ropisim.flake8"
+  >
+      <failure message="multiple spaces after operator:&#10;    gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')&#10;"/>
+  </testcase>
+  <testcase
+    name="E501 (./launch/display_gazebo.launch.py:104:100)"
+    classname="ropisim.flake8"
+  >
+      <failure message="line too long (171 &gt; 99 characters):&#10;    gazebo_exec =  launch.actions.ExecuteProcess(cmd=['gazebo', '--verbose', '-s', 'libgazebo_ros_init.so', '-s', 'libgazebo_ros_factory.so', world_path], output='screen')&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/display_gazebo.launch.py:108:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;  &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/display_gazebo.launch.py:110:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (5):&#10;    #Make launch description&#10;"/>
+  </testcase>
+  <testcase
+    name="E265 (./launch/display_gazebo.launch.py:110:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="block comment should start with '# ':&#10;    #Make launch description&#10;"/>
+  </testcase>
+  <testcase
+    name="E265 (./launch/display_gazebo.launch.py:113:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="block comment should start with '# ':&#10;    #Add launch arguments&#10;"/>
+  </testcase>
+  <testcase
+    name="E265 (./launch/display_gazebo.launch.py:119:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="block comment should start with '# ':&#10;    #Add nodes&#10;"/>
+  </testcase>
+  <testcase
+    name="W292 (./launch/display_gazebo.launch.py:129:14)"
+    classname="ropisim.flake8"
+  >
+      <failure message="no newline at end of file:&#10;    return ld"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/gazebo_nav.launch.py:1:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="'os' imported but unused:&#10;import os&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/gazebo_nav.launch.py:4:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="'launch.substitutions.Command' imported but unused:&#10;from launch.substitutions import Command, LaunchConfiguration&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/gazebo_nav.launch.py:4:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="'launch.substitutions.LaunchConfiguration' imported but unused:&#10;from launch.substitutions import Command, LaunchConfiguration&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/gazebo_nav.launch.py:14:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/gazebo_nav.launch.py:17:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (3):&#10;    # Define launch file arguments&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/gazebo_nav.launch.py:36:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/gazebo_nav.launch.py:42:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/gazebo_nav.launch.py:44:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    navigation_launch = actions.IncludeLaunchDescription(&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/gazebo_nav.launch.py:66:1)"
+    classname="ropisim.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;  &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/gazebo_nav.launch.py:68:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    #Make launch description&#10;"/>
+  </testcase>
+  <testcase
+    name="E265 (./launch/gazebo_nav.launch.py:68:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="block comment should start with '# ':&#10;    #Make launch description&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/gazebo_nav.launch.py:72:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    #Add nodes&#10;"/>
+  </testcase>
+  <testcase
+    name="E265 (./launch/gazebo_nav.launch.py:72:5)"
+    classname="ropisim.flake8"
+  >
+      <failure message="block comment should start with '# ':&#10;    #Add nodes&#10;"/>
+  </testcase>
+  <testcase
+    name="W292 (./launch/gazebo_nav.launch.py:79:14)"
+    classname="ropisim.flake8"
+  >
+      <failure message="no newline at end of file:&#10;    return ld"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/display_gazebo.launch.py
+* ./launch/gazebo_nav.launch.py</system-out>
+</testsuite>

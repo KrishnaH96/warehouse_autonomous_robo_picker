@@ -1,0 +1,76 @@
+[0.130s] Invoking command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropiapp -DCMAKE_INSTALL_PREFIX=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp
+[0.277s] -- The C compiler identification is GNU 11.4.0
+[0.278s] -- The CXX compiler identification is GNU 11.4.0
+[0.278s] -- Detecting C compiler ABI info
+[0.278s] -- Detecting C compiler ABI info - done
+[0.278s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.278s] -- Detecting C compile features
+[0.278s] -- Detecting C compile features - done
+[0.278s] -- Detecting CXX compiler ABI info
+[0.278s] -- Detecting CXX compiler ABI info - done
+[0.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.278s] -- Detecting CXX compile features
+[0.278s] -- Detecting CXX compile features - done
+[0.281s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.361s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.404s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.427s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.430s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.434s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.441s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.452s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.489s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.491s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.508s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.513s] -- Looking for pthread.h
+[0.548s] -- Looking for pthread.h - found
+[0.548s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.585s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.585s] -- Found Threads: TRUE  
+[0.670s] -- Found rclcpp_action: 16.0.7 (/opt/ros/humble/share/rclcpp_action/cmake)
+[0.721s] -- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+[0.745s] -- Found nav2_msgs: 1.1.12 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.906s] -- Found Doxygen: /usr/bin/doxygen (found version "1.9.1") found components: doxygen dot 
+[0.927s] -- Found ament_cmake_gtest: 1.3.6 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[0.928s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[0.970s] -- Configuring done
+[0.978s] -- Generating done
+[0.979s] -- Build files have been written to: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp
+[0.984s] Invoked command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropiapp -DCMAKE_INSTALL_PREFIX=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp
+[0.985s] Invoking command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp -- -j32 -l32
+[1.010s] [ 18%] [32mBuilding CXX object CMakeFiles/pick_place_task.dir/src/GoalManager.cpp.o[0m
+[1.010s] [ 18%] [32mBuilding CXX object CMakeFiles/pick_place_task.dir/src/Context.cpp.o[0m
+[1.010s] [ 27%] [32mBuilding CXX object CMakeFiles/pick_place_task.dir/src/Constants.cpp.o[0m
+[1.010s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[1.011s] [ 45%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[1.495s] [ 54%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[1.532s] [ 54%] Built target gtest_main
+[2.697s] [ 63%] [32m[1mLinking CXX static library libgtest.a[0m
+[2.748s] [ 63%] Built target gtest
+[2.759s] [ 72%] [32mBuilding CXX object CMakeFiles/ropiapp_test.dir/test/main.cpp.o[0m
+[2.759s] [ 81%] [32mBuilding CXX object CMakeFiles/ropiapp_test.dir/test/test_level_1.cpp.o[0m
+[3.081s] [ 90%] [32m[1mLinking CXX executable pick_place_task[0m
+[3.161s] [ 90%] Built target pick_place_task
+[3.319s] [100%] [32m[1mLinking CXX executable ropiapp_test[0m
+[3.391s] [100%] Built target ropiapp_test
+[3.397s] Invoked command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp -- -j32 -l32
+[3.414s] Invoking command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp
+[3.418s] -- Install configuration: ""
+[3.418s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/lib/ropiapp/pick_place_task
+[3.418s] -- Set runtime path of "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/lib/ropiapp/pick_place_task" to ""
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ament_index/resource_index/package_run_dependencies/ropiapp
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ament_index/resource_index/parent_prefix_path/ropiapp
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/environment/ament_prefix_path.sh
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/environment/ament_prefix_path.dsv
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/environment/path.sh
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/environment/path.dsv
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/local_setup.bash
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/local_setup.sh
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/local_setup.zsh
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/local_setup.dsv
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/package.dsv
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ament_index/resource_index/packages/ropiapp
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/cmake/ropiappConfig.cmake
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/cmake/ropiappConfig-version.cmake
+[3.419s] -- Installing: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp/share/ropiapp/package.xml
+[3.421s] Invoked command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp

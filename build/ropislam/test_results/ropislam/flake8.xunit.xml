@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="ropislam.flake8"
+  tests="9"
+  errors="0"
+  failures="9"
+  time="0.047"
+>
+  <testcase
+    name="F401 (./launch/slam.launch.py:4:1)"
+    classname="ropislam.flake8"
+  >
+      <failure message="'launch.launch_description_sources' imported but unused:&#10;from launch import launch_description_sources&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/slam.launch.py:5:1)"
+    classname="ropislam.flake8"
+  >
+      <failure message="'launch.actions' imported but unused:&#10;from launch import actions&#10;"/>
+  </testcase>
+  <testcase
+    name="F401 (./launch/slam.launch.py:7:1)"
+    classname="ropislam.flake8"
+  >
+      <failure message="'launch_ros.actions.Node' imported but unused:&#10;from launch_ros.actions import Node&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/slam.launch.py:16:1)"
+    classname="ropislam.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;    &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/slam.launch.py:17:5)"
+    classname="ropislam.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # Define launch file arguments&#10;"/>
+  </testcase>
+  <testcase
+    name="W293 (./launch/slam.launch.py:29:1)"
+    classname="ropislam.flake8"
+  >
+      <failure message="blank line contains whitespace:&#10;   &#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/slam.launch.py:31:5)"
+    classname="ropislam.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    # slam_toolbox_dir = get_package_share_directory('slam_toolbox')&#10;"/>
+  </testcase>
+  <testcase
+    name="E303 (./launch/slam.launch.py:48:5)"
+    classname="ropislam.flake8"
+  >
+      <failure message="too many blank lines (2):&#10;    ld.add_action(arg_sim)&#10;"/>
+  </testcase>
+  <testcase
+    name="W292 (./launch/slam.launch.py:51:14)"
+    classname="ropislam.flake8"
+  >
+      <failure message="no newline at end of file:&#10;    return ld"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/slam.launch.py</system-out>
+</testsuite>

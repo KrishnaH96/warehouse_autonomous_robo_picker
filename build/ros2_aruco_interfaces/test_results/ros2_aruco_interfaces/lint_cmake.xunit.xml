@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="ros2_aruco_interfaces.lint_cmake"
+  tests="2"
+  errors="0"
+  failures="2"
+  time="0.001"
+>
+  <testcase
+    name="whitespace/mismatch (CMakeLists.txt:28)"
+    classname="ros2_aruco_interfaces.lint_cmake"
+  >
+      <failure message="Mismatching spaces inside () after command"/>
+  </testcase>
+  <testcase
+    name="whitespace/indent (CMakeLists.txt:32)"
+    classname="ros2_aruco_interfaces.lint_cmake"
+  >
+      <failure message="Weird indentation; use 2 spaces"/>
+  </testcase>
+  <system-out>Checked files:
+* CMakeLists.txt</system-out>
+</testsuite>

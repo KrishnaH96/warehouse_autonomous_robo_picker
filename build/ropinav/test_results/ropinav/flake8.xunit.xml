@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite
+  name="ropinav.flake8"
+  tests="2"
+  errors="0"
+  failures="2"
+  time="0.053"
+>
+  <testcase
+    name="E128 (./launch/navigation_launch.py:37:21)"
+    classname="ropinav.flake8"
+  >
+      <failure message="continuation line under-indented for visual indent:&#10;                    #    'recoveries_server',&#10;"/>
+  </testcase>
+  <testcase
+    name="E127 (./launch/navigation_launch.py:38:25)"
+    classname="ropinav.flake8"
+  >
+      <failure message="continuation line over-indented for visual indent:&#10;                        'behavior_server',&#10;"/>
+  </testcase>
+  <system-out>Checked files:
+* ./launch/navigation_launch.py</system-out>
+</testsuite>

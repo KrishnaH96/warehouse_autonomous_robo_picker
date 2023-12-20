@@ -1,0 +1,9 @@
+-- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ropislam':
+ - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml
+
+
+No problems found
+
+
+-- run_test.py: return code 0
+-- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropislam/test_results/ropislam/lint_cmake.xunit.xml'

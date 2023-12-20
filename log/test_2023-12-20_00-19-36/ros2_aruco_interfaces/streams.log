@@ -1,0 +1,73 @@
+[0.162s] Invoking command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.165s] UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini
+[0.165s] Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini
+[0.165s]    Site: tejpc
+[0.165s]    Build name: (empty)
+[0.165s]  Add coverage exclude regular expressions.
+[0.165s] Create new tag: 20231220-0519 - Experimental
+[0.165s] UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini
+[0.165s] Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/CTestConfiguration.ini
+[0.165s] Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces
+[0.165s] Constructing a list of tests
+[0.165s] Done constructing a list of tests
+[0.165s] Updating test list for fixtures
+[0.165s] Added 0 tests to meet fixture requirements
+[0.165s] Checking test dependency graph...
+[0.165s] Checking test dependency graph end
+[0.165s] test 1
+[0.165s]     Start 1: copyright
+[0.165s] 
+[0.165s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_copyright/copyright.txt" "--command" "/opt/ros/humble/bin/ament_copyright" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml"
+[0.165s] 1: Test timeout computed to be: 200
+[0.192s] 1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':
+[0.192s] 1:  - /opt/ros/humble/bin/ament_copyright --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml
+[0.238s] 1: No repository roots and files found
+[0.238s] 1: No problems found, checked 0 files
+[0.243s] 1: -- run_test.py: return code 0
+[0.243s] 1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/copyright.xunit.xml'
+[0.248s] 1/3 Test #1: copyright ........................   Passed    0.08 sec
+[0.248s] test 2
+[0.248s]     Start 2: lint_cmake
+[0.248s] 
+[0.248s] 2: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_lint_cmake/lint_cmake.txt" "--command" "/opt/ros/humble/bin/ament_lint_cmake" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml"
+[0.249s] 2: Test timeout computed to be: 60
+[0.276s] 2: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':
+[0.276s] 2:  - /opt/ros/humble/bin/ament_lint_cmake --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml
+[0.308s] 2: CMakeLists.txt:28: Mismatching spaces inside () after command [whitespace/mismatch]
+[0.308s] 2: CMakeLists.txt:32: Weird indentation; use 2 spaces [whitespace/indent]
+[0.308s] 2: 
+[0.308s] 2: 
+[0.308s] 2: 2 errors
+[0.312s] 2: -- run_test.py: return code 1
+[0.313s] 2: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/lint_cmake.xunit.xml'
+[0.322s] 2/3 Test #2: lint_cmake .......................***Failed    0.07 sec
+[0.323s] test 3
+[0.323s]     Start 3: xmllint
+[0.323s] 
+[0.323s] 3: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml" "--package-name" "ros2_aruco_interfaces" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/ament_xmllint/xmllint.txt" "--command" "/opt/ros/humble/bin/ament_xmllint" "--xunit-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml"
+[0.323s] 3: Test timeout computed to be: 60
+[0.348s] 3: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/src/ros2_aruco_interfaces':
+[0.348s] 3:  - /opt/ros/humble/bin/ament_xmllint --xunit-file /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml
+[0.455s] 3: File 'package.xml' is valid
+[0.455s] 3: 
+[0.456s] 3: No problems found
+[0.461s] 3: -- run_test.py: return code 0
+[0.461s] 3: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/test_results/ros2_aruco_interfaces/xmllint.xunit.xml'
+[0.468s] 3/3 Test #3: xmllint ..........................   Passed    0.15 sec
+[0.468s] 
+[0.468s] 67% tests passed[0;0m, [0;31m1 tests failed[0;0m out of 3
+[0.468s] 
+[0.468s] Label Time Summary:
+[0.468s] copyright     =   0.08 sec*proc (1 test)
+[0.468s] lint_cmake    =   0.07 sec*proc (1 test)
+[0.468s] linter        =   0.30 sec*proc (3 tests)
+[0.468s] xmllint       =   0.15 sec*proc (1 test)
+[0.468s] 
+[0.468s] Total Test time (real) =   0.30 sec
+[0.468s] 
+[0.469s] The following tests FAILED:
+[0.469s] 	[0;31m  2 - lint_cmake (Failed)[0;0m
+[0.473s] Errors while running CTest
+[0.473s] Output from these tests are in: /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces/Testing/Temporary/LastTest.log
+[0.473s] Use "--rerun-failed --output-on-failure" to re-run the failed cases verbosely.
+[0.475s] Invoked command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ros2_aruco_interfaces' returned '8': /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

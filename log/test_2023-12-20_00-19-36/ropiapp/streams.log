@@ -1,0 +1,45 @@
+[0.286s] Invoking command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp': CMAKE_PREFIX_PATH=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.292s] UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini
+[0.292s] Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini
+[0.292s]    Site: tejpc
+[0.292s]    Build name: (empty)
+[0.292s]  Add coverage exclude regular expressions.
+[0.292s] Create new tag: 20231220-0519 - Experimental
+[0.292s] UpdateCTestConfiguration  from :/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini
+[0.292s] Parse Config file:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/CTestConfiguration.ini
+[0.292s] Test project /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp
+[0.292s] Constructing a list of tests
+[0.292s] Done constructing a list of tests
+[0.292s] Updating test list for fixtures
+[0.292s] Added 0 tests to meet fixture requirements
+[0.292s] Checking test dependency graph...
+[0.293s] Checking test dependency graph end
+[0.293s] test 1
+[0.293s]     Start 1: ropiapp_test
+[0.293s] 
+[0.293s] 1: Test command: /usr/bin/python3.10 "-u" "/opt/ros/humble/share/ament_cmake_test/cmake/run_test.py" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml" "--package-name" "ropiapp" "--output-file" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ament_cmake_gtest/ropiapp_test.txt" "--command" "/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test" "--gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml"
+[0.293s] 1: Test timeout computed to be: 60
+[0.320s] 1: -- run_test.py: invoking following command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp':
+[0.320s] 1:  - /home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/ropiapp_test --gtest_output=xml:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml
+[0.321s] 1: [==========] Running 1 test from 1 test suite.
+[0.321s] 1: [----------] Global test environment set-up.
+[0.321s] 1: [----------] 1 test from context_test
+[0.321s] 1: [ RUN      ] context_test.execute_verification
+[0.321s] 1: [       OK ] context_test.execute_verification (0 ms)
+[0.321s] 1: [----------] 1 test from context_test (0 ms total)
+[0.321s] 1: 
+[0.321s] 1: [----------] Global test environment tear-down
+[0.321s] 1: [==========] 1 test from 1 test suite ran. (0 ms total)
+[0.321s] 1: [  PASSED  ] 1 test.
+[0.321s] 1: -- run_test.py: return code 0
+[0.321s] 1: -- run_test.py: inject classname prefix into gtest result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'
+[0.322s] 1: -- run_test.py: verify result file '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp/test_results/ropiapp/ropiapp_test.gtest.xml'
+[0.326s] 1/1 Test #1: ropiapp_test .....................   Passed    0.03 sec
+[0.326s] 
+[0.326s] [0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 1
+[0.326s] 
+[0.326s] Label Time Summary:
+[0.326s] gtest    =   0.03 sec*proc (1 test)
+[0.326s] 
+[0.326s] Total Test time (real) =   0.04 sec
+[0.331s] Invoked command in '/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropiapp' returned '0': CMAKE_PREFIX_PATH=/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropiapp:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ros2_aruco_interfaces:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropislam:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropisim:/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/install/ropinav /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
