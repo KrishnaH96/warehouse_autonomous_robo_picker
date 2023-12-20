@@ -1,6 +1,0 @@
-flake8 0 0
-lint_cmake 1 0.0722235
-pep257 1 0.0995267
-xmllint 1 0.139562
----
-flake8

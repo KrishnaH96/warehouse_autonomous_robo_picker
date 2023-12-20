@@ -1,8 +1,0 @@
-source;share/ropiapp/hook/cmake_prefix_path.ps1
-source;share/ropiapp/hook/cmake_prefix_path.dsv
-source;share/ropiapp/hook/cmake_prefix_path.sh
-source;share/ropiapp/local_setup.bash
-source;share/ropiapp/local_setup.dsv
-source;share/ropiapp/local_setup.ps1
-source;share/ropiapp/local_setup.sh
-source;share/ropiapp/local_setup.zsh

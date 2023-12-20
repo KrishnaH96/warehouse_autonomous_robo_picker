@@ -1,9 +1,0 @@
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/uninstall.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/ropinav_uninstall.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/test.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/edit_cache.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/rebuild_cache.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/list_install_components.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/install.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/install/local.dir
-/home/tej/Documents/CNH/DockerImages/glxgears/code/warehouse_autonomous_robo_picker/build/ropinav/CMakeFiles/install/strip.dir
