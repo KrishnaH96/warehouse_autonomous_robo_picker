@@ -2,7 +2,7 @@
  * @file RobotAligner.hpp
  * @brief A class representing a robot aligner for orientation and movement.
  * @author Krishna Rajesh Hundekari
- * @date 2023-12-12
+ * @date 2023-12-19
  * @copyright 2023 Krishna Rajesh Hundekari
  * Apache License Version 2.0, January 2004
  * Licensed to the Apache Software Foundation (ASF) under one or more
@@ -28,34 +28,21 @@
 #include "State.hpp"
 
 /**
- * @class RobotAligner
- * @brief A class representing a robot aligner for orientation and movement.
+ * @class PickObject
+ * @brief A class representing the pick action state for the robot picker.
  */
-class RobotAligner: public State {
+class PickObject: public State {
 public:
     /**
-     * @brief Rotates the robot to align with a specified goal orientation.
-     *
-     * This function simulates the rotation of the robot to align with a specified goal orientation.
-     *
-     * @return True if the rotation alignment is successful, false otherwise.
-     */
-    bool rotateAlign();
-
-    /**
-     * @brief Moves the robot to align with a specified goal position.
-     *
-     * This function simulates the movement of the robot to align with a specified goal position.
+     * @brief Moves the robots fork lift position to pick locaiton.
      *
      * @return True if the movement alignment is successful, false otherwise.
      */
-    bool moveAlign();
+    bool moveUpForkLift();
 
     /**
      * @brief State entry point
      * 
      */
     void execute();
-
-private:
 };

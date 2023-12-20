@@ -32,7 +32,7 @@ private:
     Constants(/* args */) {
         startGoal.header.frame_id = "map";  // Assuming the frame is 'map'
         startGoal.pose.position.x = 0.0903566;    // Set your desired x-coordinate
-        startGoal.pose.position.y = 1.96692;    // Set your desired y-coordinate
+        startGoal.pose.position.y = 2.36692;    // Set your desired y-coordinate
         startGoal.pose.orientation.z = 0.694793; // Set your desired orientation
         startGoal.pose.orientation.w = 0.694793; // Set your desired orientation
 

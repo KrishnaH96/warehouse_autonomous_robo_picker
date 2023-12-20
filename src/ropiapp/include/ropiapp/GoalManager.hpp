@@ -83,8 +83,8 @@ class GoalManager: public State {
          *
          * @return True if the goal is being successfully tracked, false otherwise.
          */
-        void feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
-                        const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback> feedback);
+        // void feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
+        //                 const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback> feedback);
 
         /**
          * @brief Gets the result for the goal

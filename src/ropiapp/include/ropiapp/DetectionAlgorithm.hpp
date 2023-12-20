@@ -24,12 +24,20 @@
 #include <iostream>
 #include <string>
 
+#include "State.hpp"
+
 /**
  * @class DetectionAlgorithm
  * @brief A class representing a detection algorithm with specific functionalities.
  */
-class DetectionAlgorithm {
+class DetectionAlgorithm: public State {
 public:
+    /**
+     * @brief Construct a new DetectionAlgorithm object
+     * 
+     */
+    DetectionAlgorithm(Context&  contextPtr);
+
     /**
      * @brief Publishes data to a topic related to detected objects.
      *
@@ -38,7 +46,7 @@ public:
      *
      * @return true if the publication is successful, false otherwise.
      */
-    bool publishGods();
+    bool detectGoods();
 
     /**
      * @brief Retrieves the current location information based on the detection algorithm.
@@ -48,5 +56,5 @@ public:
      *
      * @return Current location information, typically in a suitable data structure.
      */
-    auto getLocation();
+    void execute();
 };
