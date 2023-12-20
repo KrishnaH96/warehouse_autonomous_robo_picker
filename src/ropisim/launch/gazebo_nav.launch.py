@@ -39,7 +39,6 @@ def generate_launch_description():
     slam_launch = actions.IncludeLaunchDescription(
         launch_description_sources.PythonLaunchDescriptionSource(
                 slam_dir + '/launch/slam.launch.py'))
-
     
 
     navigation_launch = actions.IncludeLaunchDescription(
@@ -58,6 +57,12 @@ def generate_launch_description():
             ])
         }.items()
     )
+
+    aruco_dir = get_package_share_directory('ros2_aruco')
+
+    aruco_launch = actions.IncludeLaunchDescription(
+        launch_description_sources.PythonLaunchDescriptionSource(
+                aruco_dir + '/launch/aruco_recognition.launch.py'))
   
 
     #Make launch description
@@ -69,5 +74,6 @@ def generate_launch_description():
     ld.add_action(sim_description_launch)
     ld.add_action(slam_launch)
     ld.add_action(navigation_launch)
+    ld.add_action(aruco_launch)
 
     return ld
