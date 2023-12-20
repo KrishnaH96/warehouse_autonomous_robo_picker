@@ -34,8 +34,8 @@ void GoalManager::PublishGoal()
 
     // Send the goal with a progress callback
     auto send_goal_options = rclcpp_action::Client<NavigateToPose>::SendGoalOptions();
-    send_goal_options.feedback_callback = std::bind(&GoalManager::feedback_callback, this, 
-                            std::placeholders::_1, std::placeholders::_2);
+    // send_goal_options.feedback_callback = std::bind(&GoalManager::feedback_callback, this, 
+    //                         std::placeholders::_1, std::placeholders::_2);
     send_goal_options.result_callback = std::bind(&GoalManager::result_callback, this, 
                                                     std::placeholders::_1);
 
@@ -50,35 +50,37 @@ void GoalManager::PublishGoal()
     {
       case rclcpp_action::ResultCode::SUCCEEDED:
         RCLCPP_INFO(contextPtr_.get_logger(), "Goal was suceeded");
-
-        if (IsStartSate) {
-            std::shared_ptr<GoalManager> endGoal(new GoalManager(contextPtr_));
-            endGoal->IsStartSate = false;
-            // endGoal.SetPose(Constants::getInstance().endGoal);
-            contextPtr_.setState(endGoal);
-        }
-
         break;
       case rclcpp_action::ResultCode::ABORTED:
         RCLCPP_ERROR(contextPtr_.get_logger(), "Goal was aborted");
-        return;
+        break;
       case rclcpp_action::ResultCode::CANCELED:
         RCLCPP_ERROR(contextPtr_.get_logger(), "Goal was canceled");
-        return;
+        break;
       default:
         RCLCPP_ERROR(contextPtr_.get_logger(), "Unknown result code");
-        return;
+        break;
     }
-    // rclcpp::shutdown();
+
+
+    // if (IsStartSate) {
+    //     RCLCPP_INFO(contextPtr_.get_logger(), "End Goal Pose was sent!!");
+    //     std::shared_ptr<GoalManager> endGoal(new GoalManager(contextPtr_));
+    //     endGoal->IsStartSate = false;
+    //     endGoal->SetPose(Constants::getInstance().endGoal);
+    //     contextPtr_.setState(endGoal);
+    // }
+
+   
   }
 
- void GoalManager::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
-                            const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback> feedback)
-  {
-    // auto distance_feedback_msg = std_msgs::msg::String();
-    // distance_feedback_msg.data = "Remaining Distance from Destination: " + std::to_string(feedback->distance_remaining);
-    RCLCPP_INFO_STREAM(contextPtr_.get_logger(), "Remaining Distance from Destination: " << feedback->distance_remaining);
-  }
+//  void GoalManager::feedback_callback(rclcpp_action::ClientGoalHandle<nav2_msgs::action::NavigateToPose>::SharedPtr, 
+//                             const std::shared_ptr<const nav2_msgs::action::NavigateToPose::Feedback> feedback)
+//   {
+//     // auto distance_feedback_msg = std_msgs::msg::String();
+//     // distance_feedback_msgresult_callback.data = "Remaining Distance from Destination: " + std::to_string(feedback->distance_remaining);
+//     // RCLCPP_INFO_STREAM(contextPtr_.get_logger(), "Remaining Distance from Destination: " << feedback->distance_remaining);
+//   }
 
 
     void GoalManager::SetPose(geometry_msgs::msg::PoseStamped pose) {
